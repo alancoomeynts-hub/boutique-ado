@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="7" />
+    <option name="cachedIndexableFilesCount" value="16" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,23 +33,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0000000640376518" />
-      <entry key="M10" value="1.0015353618505782" />
-      <entry key="M15" value="1.0446535715291887" />
-      <entry key="M30" value="2.309072098835154" />
-      <entry key="H1" value="8.124444400547668" />
-      <entry key="H2" value="17.654020269083745" />
-      <entry key="H4" value="26.479061315754294" />
-      <entry key="D1" value="37.3274526625956" />
-      <entry key="W1" value="39.60645811077372" />
+      <entry key="MS100" value="1.0000141386117842" />
+      <entry key="MS500" value="1.1071720045792715" />
+      <entry key="S2" value="1.5721637490883982" />
+      <entry key="S5" value="1.7998492379977598" />
+      <entry key="S10" value="1.8943429240990453" />
+      <entry key="S30" value="1.9925955781978026" />
+      <entry key="S60" value="3.289841919202005" />
+      <entry key="M2" value="11.945083765781852" />
+      <entry key="M5" value="38.47975137332844" />
+      <entry key="M10" value="59.30401189038345" />
+      <entry key="M15" value="68.79473861326177" />
+      <entry key="M30" value="80.86298500675838" />
+      <entry key="H1" value="92.29468615716083" />
+      <entry key="H2" value="104.94776417445617" />
+      <entry key="H4" value="115.76502838951396" />
+      <entry key="D1" value="128.80108422630656" />
+      <entry key="W1" value="131.52903507352772" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -66,29 +71,29 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.350376717016815E-5" />
-      <entry key="MS500" value="0.1398546376294639" />
-      <entry key="S2" value="0.6115320429794316" />
-      <entry key="S5" value="0.8214245664837726" />
-      <entry key="S10" value="0.9063247577352019" />
-      <entry key="S30" value="0.967745768893888" />
-      <entry key="S60" value="0.9837407020622294" />
-      <entry key="M2" value="0.991837034024355" />
-      <entry key="M5" value="0.9967268465372482" />
-      <entry key="M10" value="0.9998969371782869" />
-      <entry key="M15" value="1.0435511994283666" />
-      <entry key="M30" value="2.30836104640559" />
-      <entry key="H1" value="8.123694589284224" />
-      <entry key="H2" value="17.65330756708556" />
-      <entry key="H4" value="26.478544448784664" />
-      <entry key="D1" value="37.32733304465084" />
-      <entry key="W1" value="39.60644000853027" />
+      <entry key="MS100" value="0.8467458377918312" />
+      <entry key="MS500" value="1.0227520381932758" />
+      <entry key="S2" value="1.4770339656230664" />
+      <entry key="S5" value="1.745555065887753" />
+      <entry key="S10" value="1.8637144359407316" />
+      <entry key="S30" value="1.981506668033592" />
+      <entry key="S60" value="3.2835862547362518" />
+      <entry key="M2" value="11.93949537311727" />
+      <entry key="M5" value="38.474089578854546" />
+      <entry key="M10" value="59.29966700743506" />
+      <entry key="M15" value="68.79134686286686" />
+      <entry key="M30" value="80.86087062110992" />
+      <entry key="H1" value="92.2931931516799" />
+      <entry key="H2" value="104.94666484567207" />
+      <entry key="H4" value="115.7643076747743" />
+      <entry key="D1" value="128.8009276395853" />
+      <entry key="W1" value="131.52901158501857" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3G8dMgZWuRMxRRy72vT0KWh8RKq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -96,6 +101,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
@@ -105,6 +111,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -158,7 +165,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783357084004</updated>
-      <workItem from="1783357085062" duration="5130000" />
+      <workItem from="1783357085062" duration="5472000" />
+      <workItem from="1783456590505" duration="1006000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -173,6 +181,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
