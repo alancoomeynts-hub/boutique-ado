@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Set up base and allauth templates" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add blocks to base template">
+      <change afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -42,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3158793306112446" />
-      <entry key="MS500" value="2.6615563862710587" />
-      <entry key="S2" value="5.556013981295352" />
-      <entry key="S5" value="7.407224909973274" />
-      <entry key="S10" value="9.143938563568113" />
-      <entry key="S30" value="13.918105151333489" />
-      <entry key="S60" value="16.765564313414977" />
-      <entry key="M2" value="19.58289999814213" />
-      <entry key="M5" value="33.85926058892132" />
-      <entry key="M10" value="56.07861807766905" />
-      <entry key="M15" value="69.6022665394394" />
-      <entry key="M30" value="89.0338640470692" />
-      <entry key="H1" value="105.67795673298768" />
-      <entry key="H2" value="121.53205473295034" />
-      <entry key="H4" value="134.3061589388256" />
-      <entry key="D1" value="149.34151203002014" />
-      <entry key="W1" value="152.46190111980295" />
+      <entry key="MS100" value="1.1907824011200698" />
+      <entry key="MS500" value="1.7179722553228227" />
+      <entry key="S2" value="1.922357117708057" />
+      <entry key="S5" value="2.084824607053986" />
+      <entry key="S10" value="2.7615492144318825" />
+      <entry key="S30" value="6.539037468039371" />
+      <entry key="S60" value="12.538571966791267" />
+      <entry key="M2" value="25.549586004139204" />
+      <entry key="M5" value="51.16677480527879" />
+      <entry key="M10" value="77.30763698912145" />
+      <entry key="M15" value="96.97630280185149" />
+      <entry key="M30" value="132.9768793265341" />
+      <entry key="H1" value="165.56745343235124" />
+      <entry key="H2" value="192.81513194808232" />
+      <entry key="H4" value="212.9296302071278" />
+      <entry key="D1" value="235.5839108411982" />
+      <entry key="W1" value="240.2050920324987" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="4.914433776844007E-97" />
+      <entry key="MS500" value="5.473872752621902E-20" />
+      <entry key="S2" value="1.5295852055173523E-5" />
+      <entry key="S5" value="0.011853032353442471" />
+      <entry key="S10" value="0.10887395280477528" />
+      <entry key="S30" value="0.5107912761034161" />
+      <entry key="S60" value="1.1176108152059112" />
+      <entry key="M2" value="2.4121719155484427" />
+      <entry key="M5" value="4.437997921447741" />
+      <entry key="M10" value="5.550177281633064" />
+      <entry key="M15" value="5.9912686543362215" />
+      <entry key="M30" value="6.4732365744099445" />
+      <entry key="H1" value="6.730759438448184" />
+      <entry key="H2" value="6.863881247645427" />
+      <entry key="H4" value="6.931561699725808" />
+      <entry key="D1" value="6.9885406186942305" />
+      <entry key="W1" value="6.998361642772295" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2741789302884152" />
-      <entry key="MS500" value="2.635310695244524" />
-      <entry key="S2" value="5.522056237724923" />
-      <entry key="S5" value="7.386457740706374" />
-      <entry key="S10" value="9.131498158783796" />
-      <entry key="S30" value="13.912864391291064" />
-      <entry key="S60" value="16.762630428810017" />
-      <entry key="M2" value="19.580927261528398" />
-      <entry key="M5" value="33.856581557923725" />
-      <entry key="M10" value="56.0756861707769" />
-      <entry key="M15" value="69.59963606423999" />
-      <entry key="M30" value="89.03197139041689" />
-      <entry key="H1" value="105.67653080006296" />
-      <entry key="H2" value="121.53097380153277" />
-      <entry key="H4" value="134.3054396871302" />
-      <entry key="D1" value="149.34135371142912" />
-      <entry key="W1" value="152.46187731656332" />
+      <entry key="MS100" value="0.2238264563649306" />
+      <entry key="MS500" value="1.1554155041546126" />
+      <entry key="S2" value="1.7325131957982673" />
+      <entry key="S5" value="1.9906443191308467" />
+      <entry key="S10" value="2.760059204592306" />
+      <entry key="S30" value="6.931904039069228" />
+      <entry key="S60" value="13.558425710254038" />
+      <entry key="M2" value="27.889557634865767" />
+      <entry key="M5" value="55.564564874871024" />
+      <entry key="M10" value="82.83433280909986" />
+      <entry key="M15" value="102.9506678356052" />
+      <entry key="M30" value="139.44061176522737" />
+      <entry key="H1" value="172.2928210987348" />
+      <entry key="H2" value="199.67589193877595" />
+      <entry key="H4" value="219.85942567767762" />
+      <entry key="D1" value="242.57211203186029" />
+      <entry key="W1" value="247.20340377532963" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -175,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1783357084004</updated>
       <workItem from="1783357085062" duration="5472000" />
-      <workItem from="1783456590505" duration="1325000" />
+      <workItem from="1783456590505" duration="2388000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -193,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783457656462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add blocks to base template">
+      <option name="closed" value="true" />
+      <created>1783458223120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783458223120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +228,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Set up base and allauth templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up base and allauth templates" />
+    <MESSAGE value="add blocks to base template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add blocks to base template" />
   </component>
 </project>
