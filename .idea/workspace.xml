@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Set up base and allauth templates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,29 +24,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alancoomeynts-hub"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/alancoomeynts-hub/boutique-ado.git",
+    "accountId": "5be6fc8f-28e2-42ed-9039-c13bd3f3cb0b"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000141386117842" />
-      <entry key="MS500" value="1.1071720045792715" />
-      <entry key="S2" value="1.5721637490883982" />
-      <entry key="S5" value="1.7998492379977598" />
-      <entry key="S10" value="1.8943429240990453" />
-      <entry key="S30" value="1.9925955781978026" />
-      <entry key="S60" value="3.289841919202005" />
-      <entry key="M2" value="11.945083765781852" />
-      <entry key="M5" value="38.47975137332844" />
-      <entry key="M10" value="59.30401189038345" />
-      <entry key="M15" value="68.79473861326177" />
-      <entry key="M30" value="80.86298500675838" />
-      <entry key="H1" value="92.29468615716083" />
-      <entry key="H2" value="104.94776417445617" />
-      <entry key="H4" value="115.76502838951396" />
-      <entry key="D1" value="128.80108422630656" />
-      <entry key="W1" value="131.52903507352772" />
+      <entry key="MS100" value="1.3158793306112446" />
+      <entry key="MS500" value="2.6615563862710587" />
+      <entry key="S2" value="5.556013981295352" />
+      <entry key="S5" value="7.407224909973274" />
+      <entry key="S10" value="9.143938563568113" />
+      <entry key="S30" value="13.918105151333489" />
+      <entry key="S60" value="16.765564313414977" />
+      <entry key="M2" value="19.58289999814213" />
+      <entry key="M5" value="33.85926058892132" />
+      <entry key="M10" value="56.07861807766905" />
+      <entry key="M15" value="69.6022665394394" />
+      <entry key="M30" value="89.0338640470692" />
+      <entry key="H1" value="105.67795673298768" />
+      <entry key="H2" value="121.53205473295034" />
+      <entry key="H4" value="134.3061589388256" />
+      <entry key="D1" value="149.34151203002014" />
+      <entry key="W1" value="152.46190111980295" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -71,23 +80,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8467458377918312" />
-      <entry key="MS500" value="1.0227520381932758" />
-      <entry key="S2" value="1.4770339656230664" />
-      <entry key="S5" value="1.745555065887753" />
-      <entry key="S10" value="1.8637144359407316" />
-      <entry key="S30" value="1.981506668033592" />
-      <entry key="S60" value="3.2835862547362518" />
-      <entry key="M2" value="11.93949537311727" />
-      <entry key="M5" value="38.474089578854546" />
-      <entry key="M10" value="59.29966700743506" />
-      <entry key="M15" value="68.79134686286686" />
-      <entry key="M30" value="80.86087062110992" />
-      <entry key="H1" value="92.2931931516799" />
-      <entry key="H2" value="104.94666484567207" />
-      <entry key="H4" value="115.7643076747743" />
-      <entry key="D1" value="128.8009276395853" />
-      <entry key="W1" value="131.52901158501857" />
+      <entry key="MS100" value="1.2741789302884152" />
+      <entry key="MS500" value="2.635310695244524" />
+      <entry key="S2" value="5.522056237724923" />
+      <entry key="S5" value="7.386457740706374" />
+      <entry key="S10" value="9.131498158783796" />
+      <entry key="S30" value="13.912864391291064" />
+      <entry key="S60" value="16.762630428810017" />
+      <entry key="M2" value="19.580927261528398" />
+      <entry key="M5" value="33.856581557923725" />
+      <entry key="M10" value="56.0756861707769" />
+      <entry key="M15" value="69.59963606423999" />
+      <entry key="M30" value="89.03197139041689" />
+      <entry key="H1" value="105.67653080006296" />
+      <entry key="H2" value="121.53097380153277" />
+      <entry key="H4" value="134.3054396871302" />
+      <entry key="D1" value="149.34135371142912" />
+      <entry key="W1" value="152.46187731656332" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -112,7 +121,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -166,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1783357084004</updated>
       <workItem from="1783357085062" duration="5472000" />
-      <workItem from="1783456590505" duration="1006000" />
+      <workItem from="1783456590505" duration="1325000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -176,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783357938484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Set up base and allauth templates">
+      <option name="closed" value="true" />
+      <created>1783457656462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783457656462</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Set up base and allauth templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up base and allauth templates" />
   </component>
 </project>
