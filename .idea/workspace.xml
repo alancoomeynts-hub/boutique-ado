@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add main page header">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Finish header, add css. Update settings and urls to serve media files.">
+      <change afterPath="$PROJECT_DIR$/templates/includes/main-nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/mobile-top-header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,61 +51,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.1142146454727775E-218" />
-      <entry key="S5" value="1.2638785665426248E-87" />
-      <entry key="S10" value="6.839642280092391E-44" />
-      <entry key="S30" value="1.4261605065606995E-14" />
-      <entry key="S60" value="4.264860192192452E-7" />
-      <entry key="M2" value="0.002844062817010078" />
-      <entry key="M5" value="0.7162460245271988" />
-      <entry key="M10" value="5.8020899837505855" />
-      <entry key="M15" value="12.937179571309015" />
-      <entry key="M30" value="39.069156362002666" />
-      <entry key="H1" value="101.64583866086635" />
-      <entry key="H2" value="194.98455720895495" />
-      <entry key="H4" value="283.8306587562887" />
-      <entry key="D1" value="399.3215550003884" />
-      <entry key="W1" value="424.5976783435238" />
+      <entry key="MS100" value="1.3276704235734291" />
+      <entry key="MS500" value="4.2315179661110065" />
+      <entry key="S2" value="7.594763078138646" />
+      <entry key="S5" value="9.977459810838067" />
+      <entry key="S10" value="11.560829989790369" />
+      <entry key="S30" value="13.502855144561691" />
+      <entry key="S60" value="15.90050207838428" />
+      <entry key="M2" value="19.319327747713114" />
+      <entry key="M5" value="23.303916559112583" />
+      <entry key="M10" value="27.534647362438026" />
+      <entry key="M15" value="33.17904112996175" />
+      <entry key="M30" value="56.21955290797249" />
+      <entry key="H1" value="115.62723620799817" />
+      <entry key="H2" value="209.2641673580813" />
+      <entry key="H4" value="301.4631239503615" />
+      <entry key="D1" value="424.10112410134906" />
+      <entry key="W1" value="451.2597409870471" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000000000406" />
-      <entry key="S60" value="1.0000003112411626" />
-      <entry key="M2" value="1.0010372594454078" />
-      <entry key="M5" value="1.1589158715894134" />
-      <entry key="M10" value="1.8831993915048484" />
-      <entry key="M15" value="2.5828524651486267" />
-      <entry key="M30" value="4.1355855844157965" />
-      <entry key="H1" value="6.478307496501268" />
-      <entry key="H2" value="9.27812918727263" />
-      <entry key="H4" value="11.614654559048201" />
-      <entry key="D1" value="14.343419032939604" />
-      <entry key="W1" value="14.903631395313576" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.3347058875692961E-104" />
+      <entry key="S5" value="2.8193839979780994E-42" />
+      <entry key="S10" value="1.6791021404244881E-21" />
+      <entry key="S30" value="1.1885725747487629E-7" />
+      <entry key="S60" value="3.447569164809095E-4" />
+      <entry key="M2" value="0.01858688743760222" />
+      <entry key="M5" value="0.23526346070500145" />
+      <entry key="M10" value="0.8484916844620802" />
+      <entry key="M15" value="1.5179837521926087" />
+      <entry key="M30" value="3.170449022434129" />
+      <entry key="H1" value="5.6722248616329" />
+      <entry key="H2" value="8.681731608611168" />
+      <entry key="H4" value="11.235160161666274" />
+      <entry key="D1" value="14.264225019120307" />
+      <entry key="W1" value="14.89184818339703" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.203434432512707E-6" />
-      <entry key="MS500" value="0.08408545053261413" />
-      <entry key="S2" value="0.5384931880965242" />
-      <entry key="S5" value="0.7806782601184749" />
-      <entry key="S10" value="0.8835599923709057" />
-      <entry key="S30" value="0.9595744614181234" />
-      <entry key="S60" value="0.9795794444150486" />
-      <entry key="M2" value="0.9935904765756897" />
-      <entry key="M5" value="1.8687135920744535" />
-      <entry key="M10" value="7.675971825538822" />
-      <entry key="M15" value="15.50958649492908" />
-      <entry key="M30" value="43.19471315547984" />
-      <entry key="H1" value="108.11568705282066" />
-      <entry key="H2" value="204.25636107256588" />
-      <entry key="H4" value="295.44119835952205" />
-      <entry key="D1" value="413.6640809445178" />
-      <entry key="W1" value="439.50117558949245" />
+      <entry key="MS100" value="1.3022193357020948" />
+      <entry key="MS500" value="4.10146949089438" />
+      <entry key="S2" value="7.17915834787353" />
+      <entry key="S5" value="9.664675751857091" />
+      <entry key="S10" value="11.365604632906503" />
+      <entry key="S30" value="13.424020967765983" />
+      <entry key="S60" value="15.853502252049564" />
+      <entry key="M2" value="19.30863473810028" />
+      <entry key="M5" value="23.523863592092486" />
+      <entry key="M10" value="28.371400261747606" />
+      <entry key="M15" value="34.68572625543711" />
+      <entry key="M30" value="59.37966394175975" />
+      <entry key="H1" value="121.29071152044668" />
+      <entry key="H2" value="217.9393041046234" />
+      <entry key="H4" value="312.6939643725702" />
+      <entry key="D1" value="438.364404260072" />
+      <entry key="W1" value="466.1514470227768" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -187,7 +189,7 @@
       <workItem from="1783357085062" duration="5472000" />
       <workItem from="1783456590505" duration="2536000" />
       <workItem from="1783625702866" duration="3723000" />
-      <workItem from="1783959197079" duration="2776000" />
+      <workItem from="1783959197079" duration="3726000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -245,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783959579512</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finish header, add css. Update settings and urls to serve media files.">
+      <option name="closed" value="true" />
+      <created>1783962151795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783962151795</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +280,7 @@
     <MESSAGE value="add base template" />
     <MESSAGE value="Update base template nav menu" />
     <MESSAGE value="add main page header" />
-    <option name="LAST_COMMIT_MESSAGE" value="add main page header" />
+    <MESSAGE value="Finish header, add css. Update settings and urls to serve media files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish header, add css. Update settings and urls to serve media files." />
   </component>
 </project>
