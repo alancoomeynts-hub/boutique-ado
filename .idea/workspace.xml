@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add base template">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Update base template nav menu">
+      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="74" />
+    <option name="cachedIndexableFilesCount" value="76" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -21,6 +24,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.035433351260161" />
-      <entry key="MS500" value="1.6378070259082138" />
-      <entry key="S2" value="2.4409682637053765" />
-      <entry key="S5" value="2.7477291301273583" />
-      <entry key="S10" value="2.8684551806336165" />
-      <entry key="S30" value="2.954884176789209" />
-      <entry key="S60" value="2.98115507939102" />
-      <entry key="M2" value="3.502825047062999" />
-      <entry key="M5" value="16.84230347820251" />
-      <entry key="M10" value="54.720952830134685" />
-      <entry key="M15" value="89.36768925760909" />
-      <entry key="M30" value="159.0702426749633" />
-      <entry key="H1" value="224.6102908976359" />
-      <entry key="H2" value="276.19270688512023" />
-      <entry key="H4" value="311.8086255464038" />
-      <entry key="D1" value="350.0678732997067" />
-      <entry key="W1" value="357.69334956639307" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0001113971543631" />
+      <entry key="S2" value="1.102760129548178" />
+      <entry key="S5" value="1.4234656800382595" />
+      <entry key="S10" value="1.8380187663845922" />
+      <entry key="S30" value="2.791646555181697" />
+      <entry key="S60" value="3.2969321619759158" />
+      <entry key="M2" value="3.9961748376841237" />
+      <entry key="M5" value="9.577165697516046" />
+      <entry key="M10" value="18.887958440378533" />
+      <entry key="M15" value="26.21852186226542" />
+      <entry key="M30" value="54.8479246537445" />
+      <entry key="H1" value="121.89013300098452" />
+      <entry key="H2" value="209.77627860042972" />
+      <entry key="H4" value="286.2676033448425" />
+      <entry key="D1" value="379.7508978094111" />
+      <entry key="W1" value="399.56817169236103" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.702464575847321E-143" />
-      <entry key="S5" value="1.407599743159325E-57" />
-      <entry key="S10" value="5.149297413861606E-29" />
-      <entry key="S30" value="5.864307788173418E-10" />
-      <entry key="S60" value="3.437322196996512E-5" />
-      <entry key="M2" value="0.00917463931585883" />
-      <entry key="M5" value="0.4117506100679228" />
-      <entry key="M10" value="1.8129839855302747" />
-      <entry key="M15" value="3.054730963228014" />
-      <entry key="M30" value="5.212832304787188" />
-      <entry key="H1" value="6.839995975731435" />
-      <entry key="H2" value="7.843369637222006" />
-      <entry key="H4" value="8.401106487636316" />
-      <entry key="D1" value="8.897196907533418" />
-      <entry key="W1" value="8.985238930470514" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="1.540260230014972E-182" />
+      <entry key="S30" value="3.921920608221808E-61" />
+      <entry key="S60" value="8.88917105577938E-31" />
+      <entry key="M2" value="1.4753990864545605E-15" />
+      <entry key="M5" value="3.1416836761455173E-6" />
+      <entry key="M10" value="0.005007927927121223" />
+      <entry key="M15" value="0.06013800752257067" />
+      <entry key="M30" value="0.7314115060352152" />
+      <entry key="H1" value="2.562122339898387" />
+      <entry key="H2" value="4.800369758994002" />
+      <entry key="H4" value="6.572377404045349" />
+      <entry key="D1" value="8.540517814979808" />
+      <entry key="W1" value="8.932873864764863" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9290152184552581" />
-      <entry key="MS500" value="1.610759581177469" />
-      <entry key="S2" value="2.432650889133701" />
-      <entry key="S5" value="2.7441729333150264" />
-      <entry key="S10" value="2.866632303236891" />
-      <entry key="S30" value="2.9542658966177577" />
-      <entry key="S60" value="2.9808729931549753" />
-      <entry key="M2" value="3.5112325243534306" />
-      <entry key="M5" value="17.245594504587345" />
-      <entry key="M10" value="56.51835594504959" />
-      <entry key="M15" value="92.40591687192735" />
-      <entry key="M30" value="164.26958229422277" />
-      <entry key="H1" value="231.4413355576914" />
-      <entry key="H2" value="284.03068407812714" />
-      <entry key="H4" value="320.2066821646518" />
-      <entry key="D1" value="358.9644918896486" />
-      <entry key="W1" value="366.67850377047677" />
+      <entry key="MS100" value="0.9265880618903709" />
+      <entry key="MS500" value="0.9849563004921186" />
+      <entry key="S2" value="1.0935817976672326" />
+      <entry key="S5" value="1.4133596363840035" />
+      <entry key="S10" value="1.8303443236803971" />
+      <entry key="S30" value="2.78811656909513" />
+      <entry key="S60" value="3.2949882125946055" />
+      <entry key="M2" value="3.994822287776158" />
+      <entry key="M5" value="9.57493407919556" />
+      <entry key="M10" value="18.89054646167369" />
+      <entry key="M15" value="26.276263905515002" />
+      <entry key="M30" value="55.57608199785517" />
+      <entry key="H1" value="124.44812085693424" />
+      <entry key="H2" value="214.57292911968486" />
+      <entry key="H4" value="292.8373778785269" />
+      <entry key="D1" value="388.29082327524776" />
+      <entry key="W1" value="408.50095598137204" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -111,31 +115,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.boutique_ado_v1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.boutique_ado_v1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="boutique_ado_v1" type="Python.DjangoServer" factoryName="Django server">
       <module name="boutique_ado_v1" />
@@ -181,7 +186,8 @@
       <updated>1783357084004</updated>
       <workItem from="1783357085062" duration="5472000" />
       <workItem from="1783456590505" duration="2536000" />
-      <workItem from="1783625702866" duration="2291000" />
+      <workItem from="1783625702866" duration="3723000" />
+      <workItem from="1783959197079" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -223,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783627377714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update base template nav menu">
+      <option name="closed" value="true" />
+      <created>1783631228441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783631228441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +260,7 @@
     <MESSAGE value="add blocks to base template" />
     <MESSAGE value="add home app and templates" />
     <MESSAGE value="add base template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add base template" />
+    <MESSAGE value="Update base template nav menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update base template nav menu" />
   </component>
 </project>
