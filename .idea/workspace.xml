@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Update base template nav menu">
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add main page header">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0001113971543631" />
-      <entry key="S2" value="1.102760129548178" />
-      <entry key="S5" value="1.4234656800382595" />
-      <entry key="S10" value="1.8380187663845922" />
-      <entry key="S30" value="2.791646555181697" />
-      <entry key="S60" value="3.2969321619759158" />
-      <entry key="M2" value="3.9961748376841237" />
-      <entry key="M5" value="9.577165697516046" />
-      <entry key="M10" value="18.887958440378533" />
-      <entry key="M15" value="26.21852186226542" />
-      <entry key="M30" value="54.8479246537445" />
-      <entry key="H1" value="121.89013300098452" />
-      <entry key="H2" value="209.77627860042972" />
-      <entry key="H4" value="286.2676033448425" />
-      <entry key="D1" value="379.7508978094111" />
-      <entry key="W1" value="399.56817169236103" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="1.540260230014972E-182" />
-      <entry key="S30" value="3.921920608221808E-61" />
-      <entry key="S60" value="8.88917105577938E-31" />
-      <entry key="M2" value="1.4753990864545605E-15" />
-      <entry key="M5" value="3.1416836761455173E-6" />
-      <entry key="M10" value="0.005007927927121223" />
-      <entry key="M15" value="0.06013800752257067" />
-      <entry key="M30" value="0.7314115060352152" />
-      <entry key="H1" value="2.562122339898387" />
-      <entry key="H2" value="4.800369758994002" />
-      <entry key="H4" value="6.572377404045349" />
-      <entry key="D1" value="8.540517814979808" />
-      <entry key="W1" value="8.932873864764863" />
+      <entry key="S2" value="1.1142146454727775E-218" />
+      <entry key="S5" value="1.2638785665426248E-87" />
+      <entry key="S10" value="6.839642280092391E-44" />
+      <entry key="S30" value="1.4261605065606995E-14" />
+      <entry key="S60" value="4.264860192192452E-7" />
+      <entry key="M2" value="0.002844062817010078" />
+      <entry key="M5" value="0.7162460245271988" />
+      <entry key="M10" value="5.8020899837505855" />
+      <entry key="M15" value="12.937179571309015" />
+      <entry key="M30" value="39.069156362002666" />
+      <entry key="H1" value="101.64583866086635" />
+      <entry key="H2" value="194.98455720895495" />
+      <entry key="H4" value="283.8306587562887" />
+      <entry key="D1" value="399.3215550003884" />
+      <entry key="W1" value="424.5976783435238" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000000406" />
+      <entry key="S60" value="1.0000003112411626" />
+      <entry key="M2" value="1.0010372594454078" />
+      <entry key="M5" value="1.1589158715894134" />
+      <entry key="M10" value="1.8831993915048484" />
+      <entry key="M15" value="2.5828524651486267" />
+      <entry key="M30" value="4.1355855844157965" />
+      <entry key="H1" value="6.478307496501268" />
+      <entry key="H2" value="9.27812918727263" />
+      <entry key="H4" value="11.614654559048201" />
+      <entry key="D1" value="14.343419032939604" />
+      <entry key="W1" value="14.903631395313576" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9265880618903709" />
-      <entry key="MS500" value="0.9849563004921186" />
-      <entry key="S2" value="1.0935817976672326" />
-      <entry key="S5" value="1.4133596363840035" />
-      <entry key="S10" value="1.8303443236803971" />
-      <entry key="S30" value="2.78811656909513" />
-      <entry key="S60" value="3.2949882125946055" />
-      <entry key="M2" value="3.994822287776158" />
-      <entry key="M5" value="9.57493407919556" />
-      <entry key="M10" value="18.89054646167369" />
-      <entry key="M15" value="26.276263905515002" />
-      <entry key="M30" value="55.57608199785517" />
-      <entry key="H1" value="124.44812085693424" />
-      <entry key="H2" value="214.57292911968486" />
-      <entry key="H4" value="292.8373778785269" />
-      <entry key="D1" value="388.29082327524776" />
-      <entry key="W1" value="408.50095598137204" />
+      <entry key="MS100" value="4.203434432512707E-6" />
+      <entry key="MS500" value="0.08408545053261413" />
+      <entry key="S2" value="0.5384931880965242" />
+      <entry key="S5" value="0.7806782601184749" />
+      <entry key="S10" value="0.8835599923709057" />
+      <entry key="S30" value="0.9595744614181234" />
+      <entry key="S60" value="0.9795794444150486" />
+      <entry key="M2" value="0.9935904765756897" />
+      <entry key="M5" value="1.8687135920744535" />
+      <entry key="M10" value="7.675971825538822" />
+      <entry key="M15" value="15.50958649492908" />
+      <entry key="M30" value="43.19471315547984" />
+      <entry key="H1" value="108.11568705282066" />
+      <entry key="H2" value="204.25636107256588" />
+      <entry key="H4" value="295.44119835952205" />
+      <entry key="D1" value="413.6640809445178" />
+      <entry key="W1" value="439.50117558949245" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -187,7 +187,7 @@
       <workItem from="1783357085062" duration="5472000" />
       <workItem from="1783456590505" duration="2536000" />
       <workItem from="1783625702866" duration="3723000" />
-      <workItem from="1783959197079" duration="363000" />
+      <workItem from="1783959197079" duration="2776000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -237,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783631228441</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add main page header">
+      <option name="closed" value="true" />
+      <created>1783959579512</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783959579512</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +269,7 @@
     <MESSAGE value="add home app and templates" />
     <MESSAGE value="add base template" />
     <MESSAGE value="Update base template nav menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update base template nav menu" />
+    <MESSAGE value="add main page header" />
+    <option name="LAST_COMMIT_MESSAGE" value="add main page header" />
   </component>
 </project>
