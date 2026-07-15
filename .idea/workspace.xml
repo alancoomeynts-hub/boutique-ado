@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="start products details initial view and template">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add serach functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/mobile-top-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/mobile-top-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/main-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/main-nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,60 +49,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0001353741563421" />
-      <entry key="S5" value="1.0419290584616991" />
-      <entry key="S10" value="1.315073320510731" />
-      <entry key="S30" value="3.052698759526617" />
-      <entry key="S60" value="6.9706729443123745" />
-      <entry key="M2" value="15.073338999083498" />
-      <entry key="M5" value="28.898158578589307" />
-      <entry key="M10" value="38.21192514384214" />
-      <entry key="M15" value="43.27042571286556" />
-      <entry key="M30" value="56.604692455587504" />
-      <entry key="H1" value="89.77669728122756" />
-      <entry key="H2" value="176.13468658524064" />
-      <entry key="H4" value="324.44687182565417" />
-      <entry key="D1" value="643.002497233861" />
-      <entry key="W1" value="734.2641324317749" />
+      <entry key="MS500" value="1.000023541462138" />
+      <entry key="S2" value="1.102977215887642" />
+      <entry key="S5" value="1.8419040315258828" />
+      <entry key="S10" value="2.927829075831479" />
+      <entry key="S30" value="5.715344363193139" />
+      <entry key="S60" value="10.108802951151173" />
+      <entry key="M2" value="16.741790989515454" />
+      <entry key="M5" value="26.07876764536707" />
+      <entry key="M10" value="36.91207068059111" />
+      <entry key="M15" value="46.178412186065245" />
+      <entry key="M30" value="67.43761243192617" />
+      <entry key="H1" value="104.88913923138416" />
+      <entry key="H2" value="191.19528550564232" />
+      <entry key="H4" value="341.1876313681016" />
+      <entry key="D1" value="675.192875692401" />
+      <entry key="W1" value="772.985725448308" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.8655448738393844E-100" />
-      <entry key="S2" value="1.3010734164618124E-25" />
-      <entry key="S5" value="1.1110172135744308E-10" />
-      <entry key="S10" value="1.0545455640343487E-5" />
-      <entry key="S30" value="0.024506904762530965" />
-      <entry key="S60" value="0.22168993261729217" />
-      <entry key="M2" value="0.8332089414743937" />
-      <entry key="M5" value="2.3322864059386963" />
-      <entry key="M10" value="3.6086851055407902" />
-      <entry key="M15" value="4.292036587372468" />
-      <entry key="M30" value="5.718146569907266" />
-      <entry key="H1" value="8.197491369354127" />
-      <entry key="H2" value="12.450338443809828" />
-      <entry key="H4" value="18.164247876662717" />
-      <entry key="D1" value="28.688047958517725" />
-      <entry key="W1" value="31.49269446588776" />
+      <entry key="MS500" value="6.200975468011509E-160" />
+      <entry key="S2" value="1.5780290842009765E-40" />
+      <entry key="S5" value="1.2001789387742964E-16" />
+      <entry key="S10" value="1.09552678596842E-8" />
+      <entry key="S30" value="0.0022209613467323425" />
+      <entry key="S60" value="0.047127083004725255" />
+      <entry key="M2" value="0.21722958809668555" />
+      <entry key="M5" value="0.61530125062449" />
+      <entry key="M10" value="1.3729378943133719" />
+      <entry key="M15" value="2.165165117467694" />
+      <entry key="M30" value="4.109438065964242" />
+      <entry key="H1" value="7.088719549685766" />
+      <entry key="H2" value="11.74861287760975" />
+      <entry key="H4" value="17.884377815981377" />
+      <entry key="D1" value="29.342228909894708" />
+      <entry key="W1" value="32.43821245663448" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.3660214239864063" />
-      <entry key="MS500" value="0.8179020585577811" />
-      <entry key="S2" value="0.9510533336853559" />
-      <entry key="S5" value="1.0117657947919136" />
-      <entry key="S10" value="1.2648895438453203" />
-      <entry key="S30" value="2.9888326635316482" />
-      <entry key="S60" value="7.084570762595746" />
-      <entry key="M2" value="15.797797575798644" />
-      <entry key="M5" value="31.151226344154747" />
-      <entry key="M10" value="41.76898578501793" />
-      <entry key="M15" value="47.52405455812254" />
-      <entry key="M30" value="62.2997461632973" />
-      <entry key="H1" value="97.95955851147328" />
-      <entry key="H2" value="188.57506155975025" />
-      <entry key="H4" value="342.60424775555816" />
-      <entry key="D1" value="671.6887714820866" />
-      <entry key="W1" value="765.7565483257195" />
+      <entry key="MS100" value="2.955693483207194E-7" />
+      <entry key="MS500" value="0.04944624019342839" />
+      <entry key="S2" value="0.5067101143304503" />
+      <entry key="S5" value="1.28262742178072" />
+      <entry key="S10" value="2.400785866120124" />
+      <entry key="S30" value="5.359937055192421" />
+      <entry key="S60" value="9.88343103916453" />
+      <entry key="M2" value="16.76848096089688" />
+      <entry key="M5" value="26.59234113421668" />
+      <entry key="M10" value="38.22081071775105" />
+      <entry key="M15" value="48.29333148179192" />
+      <entry key="M30" value="71.51420765680069" />
+      <entry key="H1" value="111.95673136169412" />
+      <entry key="H2" value="202.93013063473379" />
+      <entry key="H4" value="359.0630281895759" />
+      <entry key="D1" value="704.5329185351931" />
+      <entry key="W1" value="805.4235978139983" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -189,7 +188,7 @@
       <workItem from="1783625702866" duration="3723000" />
       <workItem from="1783959197079" duration="3761000" />
       <workItem from="1784047455497" duration="6767000" />
-      <workItem from="1784134085283" duration="310000" />
+      <workItem from="1784134085283" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -303,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784063211086</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add serach functionality">
+      <option name="closed" value="true" />
+      <created>1784135160550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1784135160550</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +342,7 @@
     <MESSAGE value="Add basic products view and template, update urls" />
     <MESSAGE value="start products template" />
     <MESSAGE value="start products details initial view and template" />
-    <option name="LAST_COMMIT_MESSAGE" value="start products details initial view and template" />
+    <MESSAGE value="add serach functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add serach functionality" />
   </component>
 </project>
