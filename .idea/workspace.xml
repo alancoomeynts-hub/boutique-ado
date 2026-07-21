@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update bag context and product model to handle product sizes">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update bag template, context and view to display product sizes">
+      <change afterPath="$PROJECT_DIR$/products/templates/products/includes/quantity_input_script.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bag/contexts.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag/contexts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bag/templates/bag/bag.html" beforeDir="false" afterPath="$PROJECT_DIR$/bag/templates/bag/bag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bag/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/product_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,59 +51,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000088879633" />
-      <entry key="S5" value="1.0006018952283628" />
-      <entry key="S10" value="1.0245335531132946" />
-      <entry key="S30" value="1.290571813167535" />
-      <entry key="S60" value="1.5390471344581427" />
-      <entry key="M2" value="1.7341983102154517" />
-      <entry key="M5" value="1.8860605209777823" />
-      <entry key="M10" value="2.2414414930319815" />
-      <entry key="M15" value="4.045891783687417" />
-      <entry key="M30" value="21.03966392279546" />
-      <entry key="H1" value="73.66538016050436" />
-      <entry key="H2" value="175.58123627764877" />
-      <entry key="H4" value="350.52534487726086" />
-      <entry key="D1" value="878.049053943226" />
-      <entry key="W1" value="1071.494037819539" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000389556059" />
+      <entry key="S60" value="1.000654009859058" />
+      <entry key="M2" value="1.0847986610253928" />
+      <entry key="M5" value="2.5709678768645468" />
+      <entry key="M10" value="5.156996456314734" />
+      <entry key="M15" value="6.752251095278976" />
+      <entry key="M30" value="9.478134833066173" />
+      <entry key="H1" value="21.99345365122046" />
+      <entry key="H2" value="80.93898547498893" />
+      <entry key="H4" value="232.5643064719727" />
+      <entry key="D1" value="825.0023583426699" />
+      <entry key="W1" value="1071.7801492947776" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="8.919034514124924E-206" />
-      <entry key="S30" value="4.4679257668683266E-69" />
-      <entry key="S60" value="6.684701648167307E-35" />
-      <entry key="M2" value="8.29168202858977E-18" />
-      <entry key="M5" value="2.036697793294746E-7" />
-      <entry key="M10" value="9.160711830559987E-4" />
-      <entry key="M15" value="0.01718698356365919" />
-      <entry key="M30" value="0.3609866264400284" />
-      <entry key="H1" value="1.9326704570019126" />
-      <entry key="H2" value="5.870403351530894" />
-      <entry key="H4" value="13.217865773253974" />
-      <entry key="D1" value="33.66082917522535" />
-      <entry key="W1" value="40.66347290437093" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="3.12170813543069E-165" />
+      <entry key="S60" value="5.587598630848701E-83" />
+      <entry key="M2" value="7.580785810632575E-42" />
+      <entry key="M5" value="4.9357735641253576E-17" />
+      <entry key="M10" value="1.4260788503848924E-8" />
+      <entry key="M15" value="1.0715420204827383E-5" />
+      <entry key="M30" value="0.009013550270843461" />
+      <entry key="H1" value="0.3053937847757147" />
+      <entry key="H2" value="2.3335608791716735" />
+      <entry key="H4" value="8.333682180805154" />
+      <entry key="D1" value="31.170043565402825" />
+      <entry key="W1" value="40.21933065072449" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7845840978967508" />
-      <entry key="MS500" value="0.9526379980439373" />
-      <entry key="S2" value="0.9879432059274074" />
-      <entry key="S5" value="0.9957588698041727" />
-      <entry key="S10" value="1.022054424811792" />
-      <entry key="S30" value="1.2895420028476072" />
-      <entry key="S60" value="1.5384374180515297" />
-      <entry key="M2" value="1.7338562264864603" />
-      <entry key="M5" value="1.8859111186152755" />
-      <entry key="M10" value="2.2421984603446687" />
-      <entry key="M15" value="4.062630979948062" />
-      <entry key="M30" value="21.398440583812242" />
-      <entry key="H1" value="75.59297602457609" />
-      <entry key="H2" value="181.44439626825059" />
-      <entry key="H4" value="363.7357737564202" />
-      <entry key="D1" value="911.7070943853665" />
-      <entry key="W1" value="1112.1570398284819" />
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.9889709163809315" />
+      <entry key="S2" value="0.9972312513520695" />
+      <entry key="S5" value="0.9988915792636801" />
+      <entry key="S10" value="0.9994456359721023" />
+      <entry key="S30" value="0.999815216702606" />
+      <entry key="S60" value="1.000560861379389" />
+      <entry key="M2" value="1.084704744221516" />
+      <entry key="M5" value="2.5705951298214953" />
+      <entry key="M10" value="5.156518208669353" />
+      <entry key="M15" value="6.751822794394438" />
+      <entry key="M30" value="9.486790897341052" />
+      <entry key="H1" value="22.297868052109635" />
+      <entry key="H2" value="83.26957083023026" />
+      <entry key="H4" value="240.8932497205524" />
+      <entry key="D1" value="856.1698109013611" />
+      <entry key="W1" value="1111.9990129533658" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -193,7 +193,7 @@
       <workItem from="1784227784911" duration="3834000" />
       <workItem from="1784459229278" duration="4549000" />
       <workItem from="1784573384305" duration="4083000" />
-      <workItem from="1784650358064" duration="7546000" />
+      <workItem from="1784650358064" duration="9185000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784577151807</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update bag template, context and view to display product sizes">
+      <option name="closed" value="true" />
+      <created>1784664048487</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1784664048488</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,6 +428,7 @@
     <MESSAGE value="add bag context and delivery logic" />
     <MESSAGE value="update bag context and template" />
     <MESSAGE value="update bag context and product model to handle product sizes" />
-    <option name="LAST_COMMIT_MESSAGE" value="update bag context and product model to handle product sizes" />
+    <MESSAGE value="update bag template, context and view to display product sizes" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bag template, context and view to display product sizes" />
   </component>
 </project>
