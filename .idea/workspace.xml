@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update bag context and template">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update bag context and product model to handle product sizes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag/contexts.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag/contexts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag/templates/bag/bag.html" beforeDir="false" afterPath="$PROJECT_DIR$/bag/templates/bag/bag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="272" />
+    <option name="cachedIndexableFilesCount" value="273" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -49,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2461263086040708" />
-      <entry key="MS500" value="2.7382371889897765" />
-      <entry key="S2" value="4.197535058045377" />
-      <entry key="S5" value="4.734353976707126" />
-      <entry key="S10" value="5.650032976523244" />
-      <entry key="S30" value="11.60032345156895" />
-      <entry key="S60" value="20.821409323128236" />
-      <entry key="M2" value="31.809023803344473" />
-      <entry key="M5" value="44.347103744892976" />
-      <entry key="M10" value="59.42877593211176" />
-      <entry key="M15" value="75.0721918339004" />
-      <entry key="M30" value="115.06303091559779" />
-      <entry key="H1" value="172.96704367915387" />
-      <entry key="H2" value="265.6823896511063" />
-      <entry key="H4" value="427.4948812608273" />
-      <entry key="D1" value="892.82785884956" />
-      <entry key="W1" value="1054.9682560589426" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000088879633" />
+      <entry key="S5" value="1.0006018952283628" />
+      <entry key="S10" value="1.0245335531132946" />
+      <entry key="S30" value="1.290571813167535" />
+      <entry key="S60" value="1.5390471344581427" />
+      <entry key="M2" value="1.7341983102154517" />
+      <entry key="M5" value="1.8860605209777823" />
+      <entry key="M10" value="2.2414414930319815" />
+      <entry key="M15" value="4.045891783687417" />
+      <entry key="M30" value="21.03966392279546" />
+      <entry key="H1" value="73.66538016050436" />
+      <entry key="H2" value="175.58123627764877" />
+      <entry key="H4" value="350.52534487726086" />
+      <entry key="D1" value="878.049053943226" />
+      <entry key="W1" value="1071.494037819539" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.3726481084160662E-230" />
-      <entry key="S5" value="1.1350727207173826E-92" />
-      <entry key="S10" value="1.0653979166102114E-46" />
-      <entry key="S30" value="4.740643330346936E-16" />
-      <entry key="S60" value="2.1774475120788092E-8" />
-      <entry key="M2" value="1.4964956974116713E-4" />
-      <entry key="M5" value="0.04087894943313559" />
-      <entry key="M10" value="0.41040797217400543" />
-      <entry key="M15" value="1.0062920447984718" />
-      <entry key="M30" value="2.762188429169976" />
-      <entry key="H1" value="5.346122458173952" />
-      <entry key="H2" value="9.763566521961414" />
-      <entry key="H4" value="17.04635823031237" />
-      <entry key="D1" value="35.118545631650264" />
-      <entry key="W1" value="40.91049288381608" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="8.919034514124924E-206" />
+      <entry key="S30" value="4.4679257668683266E-69" />
+      <entry key="S60" value="6.684701648167307E-35" />
+      <entry key="M2" value="8.29168202858977E-18" />
+      <entry key="M5" value="2.036697793294746E-7" />
+      <entry key="M10" value="9.160711830559987E-4" />
+      <entry key="M15" value="0.01718698356365919" />
+      <entry key="M30" value="0.3609866264400284" />
+      <entry key="H1" value="1.9326704570019126" />
+      <entry key="H2" value="5.870403351530894" />
+      <entry key="H4" value="13.217865773253974" />
+      <entry key="D1" value="33.66082917522535" />
+      <entry key="W1" value="40.66347290437093" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2105053217240074" />
-      <entry key="MS500" value="2.722068343300539" />
-      <entry key="S2" value="4.191398411408989" />
-      <entry key="S5" value="4.731585899905709" />
-      <entry key="S10" value="5.64835603888496" />
-      <entry key="S30" value="11.596791630766855" />
-      <entry key="S60" value="20.81210580144596" />
-      <entry key="M2" value="31.797410688515853" />
-      <entry key="M5" value="44.37850263855544" />
-      <entry key="M10" value="59.82884569540192" />
-      <entry key="M15" value="76.06670331720498" />
-      <entry key="M30" value="117.81232163567638" />
-      <entry key="H1" value="178.30074447688247" />
-      <entry key="H2" value="275.4346410152834" />
-      <entry key="H4" value="444.531997472382" />
-      <entry key="D1" value="927.9435509163907" />
-      <entry key="W1" value="1095.878283125188" />
+      <entry key="MS100" value="0.7845840978967508" />
+      <entry key="MS500" value="0.9526379980439373" />
+      <entry key="S2" value="0.9879432059274074" />
+      <entry key="S5" value="0.9957588698041727" />
+      <entry key="S10" value="1.022054424811792" />
+      <entry key="S30" value="1.2895420028476072" />
+      <entry key="S60" value="1.5384374180515297" />
+      <entry key="M2" value="1.7338562264864603" />
+      <entry key="M5" value="1.8859111186152755" />
+      <entry key="M10" value="2.2421984603446687" />
+      <entry key="M15" value="4.062630979948062" />
+      <entry key="M30" value="21.398440583812242" />
+      <entry key="H1" value="75.59297602457609" />
+      <entry key="H2" value="181.44439626825059" />
+      <entry key="H4" value="363.7357737564202" />
+      <entry key="D1" value="911.7070943853665" />
+      <entry key="W1" value="1112.1570398284819" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -192,7 +192,8 @@
       <workItem from="1784134085283" duration="6583000" />
       <workItem from="1784227784911" duration="3834000" />
       <workItem from="1784459229278" duration="4549000" />
-      <workItem from="1784573384305" duration="3652000" />
+      <workItem from="1784573384305" duration="4083000" />
+      <workItem from="1784650358064" duration="7546000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -370,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784575537629</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update bag context and product model to handle product sizes">
+      <option name="closed" value="true" />
+      <created>1784577151807</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1784577151807</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +419,7 @@
     <MESSAGE value="add shopping bag app, urls and template" />
     <MESSAGE value="add bag context and delivery logic" />
     <MESSAGE value="update bag context and template" />
-    <option name="LAST_COMMIT_MESSAGE" value="update bag context and template" />
+    <MESSAGE value="update bag context and product model to handle product sizes" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bag context and product model to handle product sizes" />
   </component>
 </project>
