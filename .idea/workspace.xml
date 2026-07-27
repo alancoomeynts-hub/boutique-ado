@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="complete model methods and migrate models">
-      <change afterPath="$PROJECT_DIR$/checkout/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkout/signals.py" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="complete form, admin and signal classes to checkout">
+      <change afterPath="$PROJECT_DIR$/checkout/static/checkout/css/checkout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkout/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag/templates/bag/bag.html" beforeDir="false" afterPath="$PROJECT_DIR$/bag/templates/bag/bag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,61 +54,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0406669329825604" />
-      <entry key="MS500" value="1.527409818516332" />
-      <entry key="S2" value="2.2575894413074176" />
-      <entry key="S5" value="4.4728377331957585" />
-      <entry key="S10" value="7.101457772110332" />
-      <entry key="S30" value="10.46663824968114" />
-      <entry key="S60" value="11.643510608543476" />
-      <entry key="M2" value="12.330046094553971" />
-      <entry key="M5" value="15.62746647628251" />
-      <entry key="M10" value="27.154458522619322" />
-      <entry key="M15" value="38.42157706178805" />
-      <entry key="M30" value="63.29907197924609" />
-      <entry key="H1" value="94.23256085508629" />
-      <entry key="H2" value="143.01662537592642" />
-      <entry key="H4" value="262.18617161329024" />
-      <entry key="D1" value="912.7191575290612" />
-      <entry key="W1" value="1242.9729166792686" />
+      <entry key="MS100" value="1.0372600338631872E-17" />
+      <entry key="MS500" value="4.0282509899147544E-4" />
+      <entry key="S2" value="0.17811268148222723" />
+      <entry key="S5" value="0.723935233067377" />
+      <entry key="S10" value="1.2064763658686104" />
+      <entry key="S30" value="1.9214179109319736" />
+      <entry key="S60" value="2.3273993118855114" />
+      <entry key="M2" value="2.8283279509952046" />
+      <entry key="M5" value="5.41651939262492" />
+      <entry key="M10" value="8.977194844101524" />
+      <entry key="M15" value="11.629512012487751" />
+      <entry key="M30" value="22.53234374598057" />
+      <entry key="H1" value="51.68485194540205" />
+      <entry key="H2" value="106.70139171977966" />
+      <entry key="H4" value="226.00420108783115" />
+      <entry key="D1" value="900.591162593638" />
+      <entry key="W1" value="1263.04520970833" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="9.116995656810349E-237" />
-      <entry key="S10" value="9.548296003376891E-119" />
-      <entry key="S30" value="4.5706236574481975E-40" />
-      <entry key="S60" value="2.1397694422014575E-20" />
-      <entry key="M2" value="1.5229989065829342E-10" />
-      <entry key="M5" value="1.6582399467836095E-4" />
-      <entry key="M10" value="0.020810874999129095" />
-      <entry key="M15" value="0.10980044206418144" />
-      <entry key="M30" value="0.6528281713823955" />
-      <entry key="H1" value="1.8335122708164553" />
-      <entry key="H2" value="3.756747053585337" />
-      <entry key="H4" value="8.359487659766598" />
-      <entry key="D1" value="33.25650489334815" />
-      <entry key="W1" value="45.47441114507331" />
+      <entry key="MS100" value="1.0000000005060503" />
+      <entry key="MS500" value="1.0138305275715553" />
+      <entry key="S2" value="1.342933343753541" />
+      <entry key="S5" value="1.6526129293959833" />
+      <entry key="S10" value="1.8366161428544523" />
+      <entry key="S30" value="2.2394365203541122" />
+      <entry key="S60" value="2.520555893014132" />
+      <entry key="M2" value="2.7463023026351987" />
+      <entry key="M5" value="3.086038021916682" />
+      <entry key="M10" value="3.391174170836835" />
+      <entry key="M15" value="3.5495423786121836" />
+      <entry key="M30" value="3.8244081839727553" />
+      <entry key="H1" value="4.498045568337571" />
+      <entry key="H2" value="6.137081218575254" />
+      <entry key="H4" value="10.371165172112802" />
+      <entry key="D1" value="35.80780932182817" />
+      <entry key="W1" value="49.186346559779054" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04066693298256049" />
-      <entry key="MS500" value="0.5279743632731286" />
-      <entry key="S2" value="1.4070551515489567" />
-      <entry key="S5" value="3.9244670676424205" />
-      <entry key="S10" value="6.764564173812216" />
-      <entry key="S30" value="10.334968327641862" />
-      <entry key="S60" value="11.574767802806006" />
-      <entry key="M2" value="12.29489945980913" />
-      <entry key="M5" value="15.613183284342023" />
-      <entry key="M10" value="27.16723507550523" />
-      <entry key="M15" value="38.524732865019736" />
-      <entry key="M30" value="63.94540993264578" />
-      <entry key="H1" value="96.0596063155182" />
-      <entry key="H2" value="146.7674519101988" />
-      <entry key="H4" value="270.5398643474948" />
-      <entry key="D1" value="945.9725943637271" />
-      <entry key="W1" value="1288.4467522852997" />
+      <entry key="MS100" value="0.0034480585795864235" />
+      <entry key="MS500" value="0.32532604289987166" />
+      <entry key="S2" value="1.1669604800183209" />
+      <entry key="S5" value="2.1756603949501003" />
+      <entry key="S10" value="2.9233688048034248" />
+      <entry key="S30" value="4.101998393643538" />
+      <entry key="S60" value="4.810347067471645" />
+      <entry key="M2" value="5.551474948459944" />
+      <entry key="M5" value="8.487391003325023" />
+      <entry key="M10" value="12.35707907044004" />
+      <entry key="M15" value="15.170056567939286" />
+      <entry key="M30" value="26.35059285954926" />
+      <entry key="H1" value="56.177669317213386" />
+      <entry key="H2" value="112.8334069359912" />
+      <entry key="H4" value="236.37010593347554" />
+      <entry key="D1" value="936.3958966862206" />
+      <entry key="W1" value="1312.2309642308408" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -143,6 +146,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout\static\checkout\css" />
+      <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout" />
+      <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout\templates\checkout" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="boutique_ado_v1" type="Python.DjangoServer" factoryName="Django server">
       <module name="boutique_ado_v1" />
@@ -200,7 +210,7 @@
       <workItem from="1784965260243" duration="5235000" />
       <workItem from="1785078713199" duration="5300000" />
       <workItem from="1785093828787" duration="2138000" />
-      <workItem from="1785170611331" duration="970000" />
+      <workItem from="1785170611331" duration="3823000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -458,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785097281653</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="complete form, admin and signal classes to checkout">
+      <option name="closed" value="true" />
+      <created>1785171601393</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1785171601393</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finish header, add css. Update settings and urls to serve media files." />
     <MESSAGE value="Add mobile header and main navbars" />
     <MESSAGE value="add products app, models and fixtures" />
     <MESSAGE value="customised products admin" />
@@ -501,6 +518,7 @@
     <MESSAGE value="update toast-success template" />
     <MESSAGE value="add checkout app and base models" />
     <MESSAGE value="complete model methods and migrate models" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete model methods and migrate models" />
+    <MESSAGE value="complete form, admin and signal classes to checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete form, admin and signal classes to checkout" />
   </component>
 </project>
