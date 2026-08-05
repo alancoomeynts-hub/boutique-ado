@@ -4,20 +4,29 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add payment pending overlay">
-      <change afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkout/webhooks.py" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add webhooks for stripe webhook handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/static/checkout/js/stripe_elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/static/checkout/js/stripe_elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/webhook_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/webhooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="296" />
+    <option name="cachedIndexableFilesCount" value="298" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -52,60 +61,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000026236313" />
-      <entry key="S60" value="1.000176107077851" />
-      <entry key="M2" value="1.0458902990314969" />
-      <entry key="M5" value="2.295443840492645" />
-      <entry key="M10" value="5.0500520675462885" />
-      <entry key="M15" value="7.213778319101237" />
-      <entry key="M30" value="11.699200903090794" />
-      <entry key="H1" value="19.855442540028672" />
-      <entry key="H2" value="51.70456264421025" />
-      <entry key="H4" value="149.2256802026974" />
-      <entry key="D1" value="890.6191594274629" />
-      <entry key="W1" value="1391.4807984615122" />
+      <entry key="MS500" value="1.0000000019099609" />
+      <entry key="S2" value="1.0097931520523835" />
+      <entry key="S5" value="1.2827193741287142" />
+      <entry key="S10" value="1.9089822110277317" />
+      <entry key="S30" value="3.0145536663743555" />
+      <entry key="S60" value="3.745141326027992" />
+      <entry key="M2" value="5.944666590858572" />
+      <entry key="M5" value="15.9125363134596" />
+      <entry key="M10" value="38.477571112500506" />
+      <entry key="M15" value="57.67304367905587" />
+      <entry key="M30" value="92.30898778822822" />
+      <entry key="H1" value="123.4105259051598" />
+      <entry key="H2" value="159.7049777466175" />
+      <entry key="H4" value="237.57017613659065" />
+      <entry key="D1" value="978.0890947669291" />
+      <entry key="W1" value="1577.7436936058" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="7.606432333753695E-168" />
-      <entry key="S60" value="2.75797613001884E-84" />
-      <entry key="M2" value="1.6607155476200274E-42" />
-      <entry key="M5" value="1.9415626095933026E-17" />
-      <entry key="M10" value="4.4958321678676145E-9" />
-      <entry key="M15" value="3.0890191571311947E-6" />
-      <entry key="M30" value="0.003632315338024702" />
-      <entry key="H1" value="0.19307748644486766" />
-      <entry key="H2" value="1.6952438157157022" />
-      <entry key="H4" value="6.253534772137402" />
-      <entry key="D1" value="36.4409951280504" />
-      <entry key="W1" value="55.696098959358835" />
+      <entry key="MS500" value="4.993001199555245E-196" />
+      <entry key="S2" value="1.5340501021740423E-49" />
+      <entry key="S5" value="3.7466661186397133E-20" />
+      <entry key="S10" value="2.8794280947405525E-10" />
+      <entry key="S30" value="0.0013137884640726943" />
+      <entry key="S60" value="0.062401491119869056" />
+      <entry key="M2" value="0.4340325096483922" />
+      <entry key="M5" value="1.6290527810112783" />
+      <entry key="M10" value="3.4375038337462445" />
+      <entry key="M15" value="4.881480200934212" />
+      <entry key="M30" value="7.426943320073775" />
+      <entry key="H1" value="9.707326842716165" />
+      <entry key="H2" value="12.19656293298998" />
+      <entry key="H4" value="16.458089994529136" />
+      <entry key="D1" value="47.88260328576533" />
+      <entry key="W1" value="71.46042638201995" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.313418965430448E-5" />
-      <entry key="MS500" value="0.1396608922590275" />
-      <entry key="S2" value="0.6113201388460343" />
-      <entry key="S5" value="0.8213107007520658" />
-      <entry key="S10" value="0.9062619382673344" />
-      <entry key="S30" value="0.9677234120785553" />
-      <entry key="S60" value="0.9839047700876092" />
-      <entry key="M2" value="1.0376379426607485" />
-      <entry key="M5" value="2.2912512665619635" />
-      <entry key="M10" value="5.047022179871631" />
-      <entry key="M15" value="7.211330836684023" />
-      <entry key="M30" value="11.70124565221526" />
-      <entry key="H1" value="20.047213423060814" />
-      <entry key="H2" value="53.39764975057994" />
-      <entry key="H4" value="155.47575902509328" />
-      <entry key="D1" value="927.056998124282" />
-      <entry key="W1" value="1447.176222251709" />
+      <entry key="MS100" value="0.003879267560300921" />
+      <entry key="MS500" value="0.32941998855477217" />
+      <entry key="S2" value="0.7645503219182511" />
+      <entry key="S5" value="1.1393768631204007" />
+      <entry key="S10" value="1.790767414769877" />
+      <entry key="S30" value="2.9488126501040015" />
+      <entry key="S60" value="3.762796586943951" />
+      <entry key="M2" value="6.335890850735558" />
+      <entry key="M5" value="17.50068943176319" />
+      <entry key="M10" value="41.879651575023615" />
+      <entry key="M15" value="62.52304150462935" />
+      <entry key="M30" value="99.71264460224302" />
+      <entry key="H1" value="133.10228398422367" />
+      <entry key="H2" value="171.8913065407887" />
+      <entry key="H4" value="254.02092312433993" />
+      <entry key="D1" value="1025.967770451934" />
+      <entry key="W1" value="1649.2032809218929" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -117,33 +126,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.boutique_ado_v1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.boutique_ado_v1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout\static\checkout\css" />
@@ -212,7 +221,10 @@
       <workItem from="1785272076237" duration="7219000" />
       <workItem from="1785344787069" duration="6393000" />
       <workItem from="1785433944930" duration="3350000" />
-      <workItem from="1785515983280" duration="1730000" />
+      <workItem from="1785515983280" duration="2390000" />
+      <workItem from="1785592779435" duration="4307000" />
+      <workItem from="1785862887822" duration="2914000" />
+      <workItem from="1785949414460" duration="6758000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -550,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785436999788</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add webhooks for stripe webhook handling">
+      <option name="closed" value="true" />
+      <created>1785517730756</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1785517730756</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add sorting" />
     <MESSAGE value="add sort and products counting to products page" />
     <MESSAGE value="complete sorting functionality and add back to top button." />
     <MESSAGE value="add shopping bag app, urls and template" />
@@ -593,6 +612,17 @@
     <MESSAGE value="added checkout_success.html" />
     <MESSAGE value="update checkout_success.html with order summary" />
     <MESSAGE value="add payment pending overlay" />
-    <option name="LAST_COMMIT_MESSAGE" value="add payment pending overlay" />
+    <MESSAGE value="add webhooks for stripe webhook handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="add webhooks for stripe webhook handling" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/checkout/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
