@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add webhooks for stripe webhook handling">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Checkout app finalised">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/static/checkout/js/stripe_elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/static/checkout/js/stripe_elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/static/checkout/css/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/static/checkout/css/checkout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/webhook_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/webhooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhooks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +22,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="298" />
+    <option name="cachedIndexableFilesCount" value="299" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -61,60 +57,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000019099609" />
-      <entry key="S2" value="1.0097931520523835" />
-      <entry key="S5" value="1.2827193741287142" />
-      <entry key="S10" value="1.9089822110277317" />
-      <entry key="S30" value="3.0145536663743555" />
-      <entry key="S60" value="3.745141326027992" />
-      <entry key="M2" value="5.944666590858572" />
-      <entry key="M5" value="15.9125363134596" />
-      <entry key="M10" value="38.477571112500506" />
-      <entry key="M15" value="57.67304367905587" />
-      <entry key="M30" value="92.30898778822822" />
-      <entry key="H1" value="123.4105259051598" />
-      <entry key="H2" value="159.7049777466175" />
-      <entry key="H4" value="237.57017613659065" />
-      <entry key="D1" value="978.0890947669291" />
-      <entry key="W1" value="1577.7436936058" />
+      <entry key="MS500" value="1.0002099014858992" />
+      <entry key="S2" value="1.120409215599427" />
+      <entry key="S5" value="1.4501953566275834" />
+      <entry key="S10" value="1.883339582900908" />
+      <entry key="S30" value="5.080480537640222" />
+      <entry key="S60" value="11.346737176687476" />
+      <entry key="M2" value="19.614315824438844" />
+      <entry key="M5" value="28.737462494833437" />
+      <entry key="M10" value="32.9605598660758" />
+      <entry key="M15" value="34.54857978432647" />
+      <entry key="M30" value="37.262007655097605" />
+      <entry key="H1" value="50.21578874515438" />
+      <entry key="H2" value="89.61684486918688" />
+      <entry key="H4" value="173.42648296913725" />
+      <entry key="D1" value="928.8415557359798" />
+      <entry key="W1" value="1594.8283831102729" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="4.993001199555245E-196" />
-      <entry key="S2" value="1.5340501021740423E-49" />
-      <entry key="S5" value="3.7466661186397133E-20" />
-      <entry key="S10" value="2.8794280947405525E-10" />
-      <entry key="S30" value="0.0013137884640726943" />
-      <entry key="S60" value="0.062401491119869056" />
-      <entry key="M2" value="0.4340325096483922" />
-      <entry key="M5" value="1.6290527810112783" />
-      <entry key="M10" value="3.4375038337462445" />
-      <entry key="M15" value="4.881480200934212" />
-      <entry key="M30" value="7.426943320073775" />
-      <entry key="H1" value="9.707326842716165" />
-      <entry key="H2" value="12.19656293298998" />
-      <entry key="H4" value="16.458089994529136" />
-      <entry key="D1" value="47.88260328576533" />
-      <entry key="W1" value="71.46042638201995" />
+      <entry key="MS100" value="2.489261109560458E-143" />
+      <entry key="MS500" value="3.014491688759261E-29" />
+      <entry key="S2" value="7.409749441766379E-8" />
+      <entry key="S5" value="0.001405793105587566" />
+      <entry key="S10" value="0.03749390757959972" />
+      <entry key="S30" value="0.33469834753952743" />
+      <entry key="S60" value="0.5785311984150271" />
+      <entry key="M2" value="0.7606123838165056" />
+      <entry key="M5" value="0.8963246842904152" />
+      <entry key="M10" value="0.9467492174628642" />
+      <entry key="M15" value="0.9647968697761239" />
+      <entry key="M30" value="1.065862101083292" />
+      <entry key="H1" value="2.022911670956529" />
+      <entry key="H2" value="4.972175612777671" />
+      <entry key="H4" value="10.39546444691852" />
+      <entry key="D1" value="44.61286851724969" />
+      <entry key="W1" value="71.51330657164496" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.003879267560300921" />
-      <entry key="MS500" value="0.32941998855477217" />
-      <entry key="S2" value="0.7645503219182511" />
-      <entry key="S5" value="1.1393768631204007" />
-      <entry key="S10" value="1.790767414769877" />
-      <entry key="S30" value="2.9488126501040015" />
-      <entry key="S60" value="3.762796586943951" />
-      <entry key="M2" value="6.335890850735558" />
-      <entry key="M5" value="17.50068943176319" />
-      <entry key="M10" value="41.879651575023615" />
-      <entry key="M15" value="62.52304150462935" />
-      <entry key="M30" value="99.71264460224302" />
-      <entry key="H1" value="133.10228398422367" />
-      <entry key="H2" value="171.8913065407887" />
-      <entry key="H4" value="254.02092312433993" />
-      <entry key="D1" value="1025.967770451934" />
-      <entry key="W1" value="1649.2032809218929" />
+      <entry key="MS100" value="4.753293052408181E-19" />
+      <entry key="MS500" value="3.3783658846197316E-4" />
+      <entry key="S2" value="0.22647613006833264" />
+      <entry key="S5" value="0.8522680576217354" />
+      <entry key="S10" value="1.5218278946555266" />
+      <entry key="S30" value="5.204972292036257" />
+      <entry key="S60" value="11.79539095638611" />
+      <entry key="M2" value="20.299710273962273" />
+      <entry key="M5" value="29.599907044173694" />
+      <entry key="M10" value="33.88953628147057" />
+      <entry key="M15" value="35.501318716182126" />
+      <entry key="M30" value="38.3214711058416" />
+      <entry key="H1" value="52.233949268547825" />
+      <entry key="H2" value="94.58412837387256" />
+      <entry key="H4" value="183.8169750381733" />
+      <entry key="D1" value="973.4507166864283" />
+      <entry key="W1" value="1666.3408431352123" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -224,7 +220,8 @@
       <workItem from="1785515983280" duration="2390000" />
       <workItem from="1785592779435" duration="4307000" />
       <workItem from="1785862887822" duration="2914000" />
-      <workItem from="1785949414460" duration="6758000" />
+      <workItem from="1785949414460" duration="6825000" />
+      <workItem from="1786037183353" duration="1383000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -570,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785517730756</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Checkout app finalised">
+      <option name="closed" value="true" />
+      <created>1785964746830</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1785964746830</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add sort and products counting to products page" />
     <MESSAGE value="complete sorting functionality and add back to top button." />
     <MESSAGE value="add shopping bag app, urls and template" />
     <MESSAGE value="add bag context and delivery logic" />
@@ -613,7 +617,8 @@
     <MESSAGE value="update checkout_success.html with order summary" />
     <MESSAGE value="add payment pending overlay" />
     <MESSAGE value="add webhooks for stripe webhook handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="add webhooks for stripe webhook handling" />
+    <MESSAGE value="Checkout app finalised" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkout app finalised" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
