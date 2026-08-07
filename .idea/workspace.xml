@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update checkout form">
-      <change afterPath="$PROJECT_DIR$/profiles/templates/profiles/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="start profile app">
+      <change afterPath="$PROJECT_DIR$/templates/allauth/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/account_inactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/account_inactive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/email_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/email_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_change.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_reset_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_reset_from_key.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_reset_from_key.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_reset_from_key_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_reset_from_key_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/password_set.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/password_set.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/signup_closed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/signup_closed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/verification_sent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/verification_sent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allauth/account/verified_email_required.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allauth/account/verified_email_required.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +34,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="307" />
+    <option name="cachedIndexableFilesCount" value="312" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -30,8 +42,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,61 +68,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.471881166451716E-143" />
-      <entry key="MS500" value="3.221906777401675E-29" />
-      <entry key="S2" value="7.53410445828987E-8" />
-      <entry key="S5" value="0.0014372911868556404" />
-      <entry key="S10" value="0.046154533193152845" />
-      <entry key="S30" value="0.8363227384882324" />
-      <entry key="S60" value="1.989725761719261" />
-      <entry key="M2" value="3.134254287545882" />
-      <entry key="M5" value="4.141992989569928" />
-      <entry key="M10" value="4.554464255127608" />
-      <entry key="M15" value="4.805421226494781" />
-      <entry key="M30" value="7.669378541135763" />
-      <entry key="H1" value="21.607296891484392" />
-      <entry key="H2" value="59.368577475296064" />
-      <entry key="H4" value="141.8329171150638" />
-      <entry key="D1" value="902.967130843755" />
-      <entry key="W1" value="1622.8774440242225" />
+      <entry key="MS100" value="1.3539333368701485" />
+      <entry key="MS500" value="2.125174114697913" />
+      <entry key="S2" value="3.542850248929085" />
+      <entry key="S5" value="4.293451425526196" />
+      <entry key="S10" value="4.621486478276035" />
+      <entry key="S30" value="4.867735927389937" />
+      <entry key="S60" value="4.945984546259687" />
+      <entry key="M2" value="5.219034616984153" />
+      <entry key="M5" value="6.499367453104243" />
+      <entry key="M10" value="7.745786494380832" />
+      <entry key="M15" value="8.430516351803867" />
+      <entry key="M30" value="11.481991863879493" />
+      <entry key="H1" value="24.86669104061598" />
+      <entry key="H2" value="61.92817045102456" />
+      <entry key="H4" value="143.88763991096" />
+      <entry key="D1" value="904.814857768606" />
+      <entry key="W1" value="1627.0668799083248" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0000000001771328" />
-      <entry key="M10" value="1.0000133091924477" />
-      <entry key="M15" value="1.0005619707597857" />
-      <entry key="M30" value="1.0257240850587022" />
-      <entry key="H1" value="1.3142652622775495" />
-      <entry key="H2" value="2.959774887382709" />
-      <entry key="H4" value="7.526401112861564" />
-      <entry key="D1" value="42.28241789559947" />
-      <entry key="W1" value="71.72505345783506" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.617740570241774E-263" />
+      <entry key="S2" value="2.452501914343414E-66" />
+      <entry key="S5" value="5.699591656173775E-27" />
+      <entry key="S10" value="7.549563998121862E-14" />
+      <entry key="S30" value="4.226432691880473E-5" />
+      <entry key="S60" value="0.006501101977265449" />
+      <entry key="M2" value="0.08062941136623442" />
+      <entry key="M5" value="0.36525603114225735" />
+      <entry key="M10" value="0.6043721979607256" />
+      <entry key="M15" value="0.7152257209167171" />
+      <entry key="M30" value="0.8672216657174071" />
+      <entry key="H1" value="1.2084614809435423" />
+      <entry key="H2" value="2.838138418218082" />
+      <entry key="H4" value="7.370124184900277" />
+      <entry key="D1" value="42.13481148432552" />
+      <entry key="W1" value="71.68922988251883" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.9199887615499883E-16" />
-      <entry key="MS500" value="8.29195553170742E-4" />
-      <entry key="S2" value="0.16969316700468023" />
-      <entry key="S5" value="0.49305525552458185" />
-      <entry key="S10" value="0.7434356689073633" />
-      <entry key="S30" value="1.7045318645952596" />
-      <entry key="S60" value="2.9089570406408147" />
-      <entry key="M2" value="4.086864051978276" />
-      <entry key="M5" value="5.120600920254261" />
-      <entry key="M10" value="5.543289909086804" />
-      <entry key="M15" value="5.798399612964469" />
-      <entry key="M30" value="8.691080446122962" />
-      <entry key="H1" value="22.918838000477148" />
-      <entry key="H2" value="62.325400206922644" />
-      <entry key="H4" value="149.3556717713336" />
-      <entry key="D1" value="945.2460280360884" />
-      <entry key="W1" value="1694.601647349802" />
+      <entry key="MS100" value="0.98129429268285" />
+      <entry key="MS500" value="1.7355142285055267" />
+      <entry key="S2" value="3.3991802155303636" />
+      <entry key="S5" value="4.230871259152052" />
+      <entry key="S10" value="4.589264000295106" />
+      <entry key="S30" value="4.856816013761635" />
+      <entry key="S60" value="4.946454715983565" />
+      <entry key="M2" value="5.293083128530149" />
+      <entry key="M5" value="6.855704291798302" />
+      <entry key="M10" value="8.342844190905224" />
+      <entry key="M15" value="9.139952360204173" />
+      <entry key="M30" value="12.3456284631587" />
+      <entry key="H1" value="26.07255545453012" />
+      <entry key="H2" value="64.76343192523153" />
+      <entry key="H4" value="151.25417029739393" />
+      <entry key="D1" value="946.9461569975332" />
+      <entry key="W1" value="1698.7552595342222" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -221,7 +233,9 @@
       <workItem from="1785592779435" duration="4307000" />
       <workItem from="1785862887822" duration="2914000" />
       <workItem from="1785949414460" duration="6825000" />
-      <workItem from="1786037183353" duration="2851000" />
+      <workItem from="1786037183353" duration="3674000" />
+      <workItem from="1786119665820" duration="1184000" />
+      <workItem from="1786134648989" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -583,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786039225890</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="start profile app">
+      <option name="closed" value="true" />
+      <created>1786047628545</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1786047628545</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +623,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add shopping bag app, urls and template" />
     <MESSAGE value="add bag context and delivery logic" />
     <MESSAGE value="update bag context and template" />
     <MESSAGE value="update bag context and product model to handle product sizes" />
@@ -626,7 +647,8 @@
     <MESSAGE value="add webhooks for stripe webhook handling" />
     <MESSAGE value="Checkout app finalised" />
     <MESSAGE value="update checkout form" />
-    <option name="LAST_COMMIT_MESSAGE" value="update checkout form" />
+    <MESSAGE value="start profile app" />
+    <option name="LAST_COMMIT_MESSAGE" value="start profile app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
