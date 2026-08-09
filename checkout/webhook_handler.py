@@ -1,6 +1,8 @@
+from django.db.models import Model
 from django.http import HttpResponse
 from .models import Order,OrderLineItem
 from products.models import Product
+from profiles.models import UserProfile
 import stripe
 import json
 import time
@@ -42,29 +44,46 @@ class StripeWH_Handler:
             if value == "":
                 shipping_details.address[field] = None
 
+        profile=None
+        username=intent.metadata.username
+        if username !='AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            if save_info:
+                profile.default_phone_number = shipping_details.phone
+                profile.default_country = shipping_details.address.country
+                profile.default_postcode = shipping_details.address.postal_code
+                profile.default_town_or_city = shipping_details.address.city
+                profile.default_street_address1 = shipping_details.address.line1
+                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_county = shipping_details.address.state
+                profile.save()
+
+
         order_exists = False
         attempt=1
         while attempt <=5:
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
-                        email__iexact=shipping_details.email,
-                        phone_number__iexact=shipping_details.phone,
-                        country__iexact=shipping_details.country,
-                        postcode__iexact=shipping_details.postal_code,
-                        town_or_city__iexact=shipping_details.city,
-                        street_address1__iexact=shipping_details.line1,
-                        street_address2__iexact=shipping_details.line2,
-                        county__iexact=shipping_details.state,
-                        grand_total=grand_total,
-                        stripe_pid=pid,
-                        original_bag=bag,
+                    user_profile=profile,
+                    email__iexact=shipping_details.email,
+                    phone_number__iexact=shipping_details.phone,
+                    country__iexact=shipping_details.country,
+                    postcode__iexact=shipping_details.postal_code,
+                    town_or_city__iexact=shipping_details.city,
+                    street_address1__iexact=shipping_details.line1,
+                    street_address2__iexact=shipping_details.line2,
+                    county__iexact=shipping_details.state,
+                    grand_total=grand_total,
+                    stripe_pid=pid,
+                    original_bag=bag,
                 )
                 order_exists = True
                 break
             except Order.DoesNotExist:
                 attempt+=1
                 time.sleep(1)
+
         if order_exists:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',

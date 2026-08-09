@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="ad profile form, views and updated template">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add order history to profile and update checkout view to pull profile data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout/checkout_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/static/profiles/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/static/profiles/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/static/profiles/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/static/profiles/js/countryfield.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/webhook_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0291572809855252" />
-      <entry key="MS500" value="1.493318751288421" />
-      <entry key="S2" value="1.9982594866461132" />
-      <entry key="S5" value="2.833273493683728" />
-      <entry key="S10" value="3.9567512954550477" />
-      <entry key="S30" value="6.3625768974026835" />
-      <entry key="S60" value="8.888691468141698" />
-      <entry key="M2" value="12.050549344295812" />
-      <entry key="M5" value="15.743225692687552" />
-      <entry key="M10" value="17.653925821551848" />
-      <entry key="M15" value="18.90855255538502" />
-      <entry key="M30" value="26.273633702547006" />
-      <entry key="H1" value="47.95739572613767" />
-      <entry key="H2" value="89.78234429176555" />
-      <entry key="H4" value="170.4302856011417" />
-      <entry key="D1" value="935.5114718633698" />
-      <entry key="W1" value="1760.4323355907204" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000661144" />
+      <entry key="S30" value="1.0006932466637364" />
+      <entry key="S60" value="1.0923430914837176" />
+      <entry key="M2" value="2.5841494096125324" />
+      <entry key="M5" value="12.283292711901142" />
+      <entry key="M10" value="25.5050673932563" />
+      <entry key="M15" value="33.86716563581008" />
+      <entry key="M30" value="49.67040603871432" />
+      <entry key="H1" value="75.12498944129283" />
+      <entry key="H2" value="119.23259787299791" />
+      <entry key="H4" value="201.28033491755278" />
+      <entry key="D1" value="968.0281583518404" />
+      <entry key="W1" value="1800.6269256704743" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.240799714116614E-115" />
-      <entry key="MS500" value="1.4422749115385202E-23" />
-      <entry key="S2" value="1.948776402882234E-6" />
-      <entry key="S5" value="0.005198837318522417" />
-      <entry key="S10" value="0.07224515818337368" />
-      <entry key="S30" value="0.49000434595396003" />
-      <entry key="S60" value="1.022322390633644" />
-      <entry key="M2" value="1.667637312634199" />
-      <entry key="M5" value="2.3443515288910124" />
-      <entry key="M10" value="2.6502487219182487" />
-      <entry key="M15" value="2.793909102998944" />
-      <entry key="M30" value="3.2569164988865107" />
-      <entry key="H1" value="4.356962255344237" />
-      <entry key="H2" value="6.629425650519946" />
-      <entry key="H4" value="11.362856662214389" />
-      <entry key="D1" value="48.180715193220784" />
-      <entry key="W1" value="82.99902692704411" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="4.569915635198765E-248" />
+      <entry key="S2" value="1.4620998994368103E-62" />
+      <entry key="S5" value="1.8457516913417233E-25" />
+      <entry key="S10" value="4.3833687657170626E-13" />
+      <entry key="S30" value="9.610052785703897E-5" />
+      <entry key="S60" value="0.013230553668662395" />
+      <entry key="M2" value="0.16119658515657756" />
+      <entry key="M5" value="0.8244119105737343" />
+      <entry key="M10" value="1.7453060945086163" />
+      <entry key="M15" value="2.394234615750689" />
+      <entry key="M30" value="3.6057017854925095" />
+      <entry key="H1" value="5.18026289591006" />
+      <entry key="H2" value="7.72365741941932" />
+      <entry key="H4" value="12.592342344038684" />
+      <entry key="D1" value="49.64438181315057" />
+      <entry key="W1" value="84.86714495205288" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.031686233746083176" />
-      <entry key="MS500" value="0.5062434918633104" />
-      <entry key="S2" value="1.2039649739761287" />
-      <entry key="S5" value="2.273180959193662" />
-      <entry key="S10" value="3.6048986225930606" />
-      <entry key="S30" value="6.60272897663919" />
-      <entry key="S60" value="9.728421129133212" />
-      <entry key="M2" value="13.59273020190945" />
-      <entry key="M5" value="18.023317928439184" />
-      <entry key="M10" value="20.26887632107285" />
-      <entry key="M15" value="21.677798963316537" />
-      <entry key="M30" value="29.51564533522129" />
-      <entry key="H1" value="52.30351424316385" />
-      <entry key="H2" value="96.40349654320968" />
-      <entry key="H4" value="181.78661427769765" />
-      <entry key="D1" value="983.6880563159293" />
-      <entry key="W1" value="1843.4303630628447" />
+      <entry key="MS100" value="0.8122523963562355" />
+      <entry key="MS500" value="0.9592641193252643" />
+      <entry key="S2" value="0.989656656415207" />
+      <entry key="S5" value="0.9958497530944581" />
+      <entry key="S10" value="0.9979227190523673" />
+      <entry key="S30" value="1.000059799631134" />
+      <entry key="S60" value="1.1036279491151768" />
+      <entry key="M2" value="2.7352867609826315" />
+      <entry key="M5" value="13.085140930677545" />
+      <entry key="M10" value="27.225816301443043" />
+      <entry key="M15" value="36.23888748283294" />
+      <entry key="M30" value="53.25889418460307" />
+      <entry key="H1" value="80.29229124580989" />
+      <entry key="H2" value="126.94657429070867" />
+      <entry key="H4" value="213.86532113934643" />
+      <entry key="D1" value="1017.6682428281357" />
+      <entry key="W1" value="1885.493042357765" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -231,15 +224,7 @@
       <workItem from="1786185858185" duration="635000" />
       <workItem from="1786203811121" duration="3905000" />
       <workItem from="1786269891138" duration="5104000" />
-      <workItem from="1786289250085" duration="2763000" />
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <option name="closed" value="true" />
-      <created>1783357938484</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1783357938484</updated>
+      <workItem from="1786289250085" duration="4184000" />
     </task>
     <task id="LOCAL-00002" summary="Set up base and allauth templates">
       <option name="closed" value="true" />
@@ -625,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786271188363</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add order history to profile and update checkout view to pull profile data">
+      <option name="closed" value="true" />
+      <created>1786296141447</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1786296141448</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update bag template, context and view to display product sizes" />
     <MESSAGE value="add quantity update buttons" />
     <MESSAGE value="add update and remove buttons to bag template" />
     <MESSAGE value="finish remove view, add template tag" />
@@ -668,7 +660,8 @@
     <MESSAGE value="updated allauth templates" />
     <MESSAGE value="updated profile view and templates, added css for allauth templates" />
     <MESSAGE value="ad profile form, views and updated template" />
-    <option name="LAST_COMMIT_MESSAGE" value="ad profile form, views and updated template" />
+    <MESSAGE value="add order history to profile and update checkout view to pull profile data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add order history to profile and update checkout view to pull profile data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
