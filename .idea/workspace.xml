@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="updated profile view and templates, added css for allauth templates">
-      <change afterPath="$PROJECT_DIR$/profiles/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles/static/profiles/js/profile.js" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="ad profile form, views and updated template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout/checkout_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles/static/profiles/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/static/profiles/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/static/profiles/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/static/profiles/js/countryfield.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles/templates/profiles/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/profiles/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/toasts/toast_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/toasts/toast_success.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="314" />
+    <option name="cachedIndexableFilesCount" value="315" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -58,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000014688041732" />
-      <entry key="MS500" value="1.1510526140056658" />
-      <entry key="S2" value="2.029082756206405" />
-      <entry key="S5" value="2.5341318653172142" />
-      <entry key="S10" value="2.8069722138884456" />
-      <entry key="S30" value="3.452264588495658" />
-      <entry key="S60" value="4.671416513547998" />
-      <entry key="M2" value="6.796742462164812" />
-      <entry key="M5" value="9.83309985234876" />
-      <entry key="M10" value="11.580081125459651" />
-      <entry key="M15" value="12.478129625635361" />
-      <entry key="M30" value="16.299632060544866" />
-      <entry key="H1" value="29.544753498406035" />
-      <entry key="H2" value="64.11359146189474" />
-      <entry key="H4" value="142.87500410721776" />
-      <entry key="D1" value="904.2417762018177" />
-      <entry key="W1" value="1666.2130219902372" />
+      <entry key="MS100" value="1.0291572809855252" />
+      <entry key="MS500" value="1.493318751288421" />
+      <entry key="S2" value="1.9982594866461132" />
+      <entry key="S5" value="2.833273493683728" />
+      <entry key="S10" value="3.9567512954550477" />
+      <entry key="S30" value="6.3625768974026835" />
+      <entry key="S60" value="8.888691468141698" />
+      <entry key="M2" value="12.050549344295812" />
+      <entry key="M5" value="15.743225692687552" />
+      <entry key="M10" value="17.653925821551848" />
+      <entry key="M15" value="18.90855255538502" />
+      <entry key="M30" value="26.273633702547006" />
+      <entry key="H1" value="47.95739572613767" />
+      <entry key="H2" value="89.78234429176555" />
+      <entry key="H4" value="170.4302856011417" />
+      <entry key="D1" value="935.5114718633698" />
+      <entry key="W1" value="1760.4323355907204" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="1.8325966305155804E-215" />
-      <entry key="S30" value="7.151541154536687E-72" />
-      <entry key="S60" value="6.233300124110926E-36" />
-      <entry key="M2" value="6.056478807510167E-18" />
-      <entry key="M5" value="3.949552381656544E-7" />
-      <entry key="M10" value="0.0016364084546354627" />
-      <entry key="M15" value="0.02645025023836156" />
-      <entry key="M30" value="0.43056090374134115" />
-      <entry key="H1" value="1.8033183690034797" />
-      <entry key="H2" value="4.413339062871957" />
-      <entry key="H4" value="9.436455801486282" />
-      <entry key="D1" value="45.406073953366956" />
-      <entry key="W1" value="77.04375872441435" />
+      <entry key="MS100" value="6.240799714116614E-115" />
+      <entry key="MS500" value="1.4422749115385202E-23" />
+      <entry key="S2" value="1.948776402882234E-6" />
+      <entry key="S5" value="0.005198837318522417" />
+      <entry key="S10" value="0.07224515818337368" />
+      <entry key="S30" value="0.49000434595396003" />
+      <entry key="S60" value="1.022322390633644" />
+      <entry key="M2" value="1.667637312634199" />
+      <entry key="M5" value="2.3443515288910124" />
+      <entry key="M10" value="2.6502487219182487" />
+      <entry key="M15" value="2.793909102998944" />
+      <entry key="M30" value="3.2569164988865107" />
+      <entry key="H1" value="4.356962255344237" />
+      <entry key="H2" value="6.629425650519946" />
+      <entry key="H4" value="11.362856662214389" />
+      <entry key="D1" value="48.180715193220784" />
+      <entry key="W1" value="82.99902692704411" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7791770317804473" />
-      <entry key="MS500" value="1.0983669374338436" />
-      <entry key="S2" value="2.010674603501894" />
-      <entry key="S5" value="2.5253247677730406" />
-      <entry key="S10" value="2.799287929730256" />
-      <entry key="S30" value="3.437296414948383" />
-      <entry key="S60" value="4.642477855621684" />
-      <entry key="M2" value="6.76199652608875" />
-      <entry key="M5" value="9.80804293714596" />
-      <entry key="M10" value="11.566188518580011" />
-      <entry key="M15" value="12.493334880618068" />
-      <entry key="M30" value="16.723340800646664" />
-      <entry key="H1" value="31.343076648751065" />
-      <entry key="H2" value="68.52268618459497" />
-      <entry key="H4" value="152.307261497314" />
-      <entry key="D1" value="949.644210554762" />
-      <entry key="W1" value="1743.2558894377353" />
+      <entry key="MS100" value="0.031686233746083176" />
+      <entry key="MS500" value="0.5062434918633104" />
+      <entry key="S2" value="1.2039649739761287" />
+      <entry key="S5" value="2.273180959193662" />
+      <entry key="S10" value="3.6048986225930606" />
+      <entry key="S30" value="6.60272897663919" />
+      <entry key="S60" value="9.728421129133212" />
+      <entry key="M2" value="13.59273020190945" />
+      <entry key="M5" value="18.023317928439184" />
+      <entry key="M10" value="20.26887632107285" />
+      <entry key="M15" value="21.677798963316537" />
+      <entry key="M30" value="29.51564533522129" />
+      <entry key="H1" value="52.30351424316385" />
+      <entry key="H2" value="96.40349654320968" />
+      <entry key="H4" value="181.78661427769765" />
+      <entry key="D1" value="983.6880563159293" />
+      <entry key="W1" value="1843.4303630628447" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -229,7 +230,8 @@
       <workItem from="1786139100567" duration="35000" />
       <workItem from="1786185858185" duration="635000" />
       <workItem from="1786203811121" duration="3905000" />
-      <workItem from="1786269891138" duration="1269000" />
+      <workItem from="1786269891138" duration="5104000" />
+      <workItem from="1786289250085" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -615,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786205377305</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="ad profile form, views and updated template">
+      <option name="closed" value="true" />
+      <created>1786271188363</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1786271188363</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +643,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update bag context and product model to handle product sizes" />
     <MESSAGE value="update bag template, context and view to display product sizes" />
     <MESSAGE value="add quantity update buttons" />
     <MESSAGE value="add update and remove buttons to bag template" />
@@ -658,7 +667,8 @@
     <MESSAGE value="start profile app" />
     <MESSAGE value="updated allauth templates" />
     <MESSAGE value="updated profile view and templates, added css for allauth templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated profile view and templates, added css for allauth templates" />
+    <MESSAGE value="ad profile form, views and updated template" />
+    <option name="LAST_COMMIT_MESSAGE" value="ad profile form, views and updated template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
