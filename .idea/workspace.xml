@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update webhook handler to handle profiles">
-      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout/confirmation_emails/confirmation_email_subject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/webhook_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Add product form">
+      <change afterPath="$PROJECT_DIR$/products/templates/products/add_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0002562784872127" />
-      <entry key="MS500" value="1.191334561067518" />
-      <entry key="S2" value="1.734783063741645" />
-      <entry key="S5" value="2.306447155301857" />
-      <entry key="S10" value="2.850597771368988" />
-      <entry key="S30" value="3.831038346427119" />
-      <entry key="S60" value="5.033338357851046" />
-      <entry key="M2" value="7.466097835337387" />
-      <entry key="M5" value="16.184789531546762" />
-      <entry key="M10" value="28.11694809872694" />
-      <entry key="M15" value="37.958468918087206" />
-      <entry key="M30" value="61.562588917490245" />
-      <entry key="H1" value="96.09663082250498" />
-      <entry key="H2" value="147.97197886020948" />
-      <entry key="H4" value="235.37537268032546" />
-      <entry key="D1" value="1008.2664985703595" />
-      <entry key="W1" value="1856.8482563172101" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000011077010627" />
+      <entry key="S2" value="1.0328019059761055" />
+      <entry key="S5" value="1.2957033113448566" />
+      <entry key="S10" value="1.708979912462511" />
+      <entry key="S30" value="2.9533156277716524" />
+      <entry key="S60" value="6.460925503638702" />
+      <entry key="M2" value="13.445738748533623" />
+      <entry key="M5" value="27.544419971845965" />
+      <entry key="M10" value="42.575630395180866" />
+      <entry key="M15" value="53.85322189151813" />
+      <entry key="M30" value="79.37172556706786" />
+      <entry key="H1" value="115.32625697920119" />
+      <entry key="H2" value="168.2136599231998" />
+      <entry key="H4" value="256.265027069647" />
+      <entry key="D1" value="1029.8406227780708" />
+      <entry key="W1" value="1879.4760513322965" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.843727762706807E-186" />
-      <entry key="S2" value="3.684887207147951E-47" />
-      <entry key="S5" value="2.6703591733276497E-19" />
-      <entry key="S10" value="5.167551829999595E-10" />
-      <entry key="S30" value="8.065756789685351E-4" />
-      <entry key="S60" value="0.033908759772731785" />
-      <entry key="M2" value="0.3781475661850637" />
-      <entry key="M5" value="2.353209940946202" />
-      <entry key="M10" value="4.629216698224405" />
-      <entry key="M15" value="5.991153453049591" />
-      <entry key="M30" value="8.401337977382443" />
-      <entry key="H1" value="11.064518909650173" />
-      <entry key="H2" value="14.413751388028427" />
-      <entry key="H4" value="19.765397004723035" />
-      <entry key="D1" value="57.509839755295175" />
-      <entry key="W1" value="93.59186161653871" />
+      <entry key="MS100" value="2.0429026534451855E-47" />
+      <entry key="MS500" value="4.592503907593706E-10" />
+      <entry key="S2" value="0.004629268636490555" />
+      <entry key="S5" value="0.11646755366309666" />
+      <entry key="S10" value="0.34127342947129474" />
+      <entry key="S30" value="0.6988382467298124" />
+      <entry key="S60" value="0.8405437941423426" />
+      <entry key="M2" value="1.053390754458539" />
+      <entry key="M5" value="2.5420728602293687" />
+      <entry key="M10" value="4.772167940159992" />
+      <entry key="M15" value="6.231279739080798" />
+      <entry key="M30" value="8.853447814135903" />
+      <entry key="H1" value="11.698725634465722" />
+      <entry key="H2" value="15.173972416324835" />
+      <entry key="H4" value="20.600589875927476" />
+      <entry key="D1" value="58.429879599093276" />
+      <entry key="W1" value="94.57327205206124" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8411119189149183" />
-      <entry key="MS500" value="1.1507532719593958" />
-      <entry key="S2" value="1.7174786472876487" />
-      <entry key="S5" value="2.270067253132915" />
-      <entry key="S10" value="2.80049932330151" />
-      <entry key="S30" value="3.786166105893341" />
-      <entry key="S60" value="5.025866828026708" />
-      <entry key="M2" value="7.804829181373757" />
-      <entry key="M5" value="18.49809558907466" />
-      <entry key="M10" value="32.712755566097066" />
-      <entry key="M15" value="43.92100127286011" />
-      <entry key="M30" value="69.94223966862069" />
-      <entry key="H1" value="107.14482086167625" />
-      <entry key="H2" value="162.3737193524943" />
-      <entry key="H4" value="255.13197237421537" />
-      <entry key="D1" value="1065.7717333645492" />
-      <entry key="W1" value="1950.4390352650796" />
+      <entry key="MS100" value="0.6285066872609142" />
+      <entry key="MS500" value="0.9113023655880317" />
+      <entry key="S2" value="1.0122789391044655" />
+      <entry key="S5" value="1.3781787190200592" />
+      <entry key="S10" value="2.0073230502956663" />
+      <entry key="S30" value="3.622483241811082" />
+      <entry key="S60" value="7.278438595772115" />
+      <entry key="M2" value="14.47494145898141" />
+      <entry key="M5" value="30.05558156345466" />
+      <entry key="M10" value="47.31830863625166" />
+      <entry key="M15" value="60.058015899513" />
+      <entry key="M30" value="88.20415948869974" />
+      <entry key="H1" value="127.00882467628736" />
+      <entry key="H2" value="183.37563733042788" />
+      <entry key="H4" value="276.85680121047346" />
+      <entry key="D1" value="1088.2658885528404" />
+      <entry key="W1" value="1974.0482387507507" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -229,22 +226,7 @@
       <workItem from="1786269891138" duration="5104000" />
       <workItem from="1786289250085" duration="7707000" />
       <workItem from="1786347938823" duration="26000" />
-    </task>
-    <task id="LOCAL-00003" summary="add blocks to base template">
-      <option name="closed" value="true" />
-      <created>1783458223120</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1783458223120</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add home app and templates">
-      <option name="closed" value="true" />
-      <created>1783459133830</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1783459133830</updated>
+      <workItem from="1786384527250" duration="884000" />
     </task>
     <task id="LOCAL-00005" summary="add base template">
       <option name="closed" value="true" />
@@ -622,7 +604,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786297358836</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add email templates, update handler to send them">
+      <option name="closed" value="true" />
+      <created>1786384809568</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1786384809568</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add product form">
+      <option name="closed" value="true" />
+      <created>1786384821541</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1786384821541</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add update and remove buttons to bag template" />
-    <MESSAGE value="finish remove view, add template tag" />
     <MESSAGE value="Added toasts" />
     <MESSAGE value="Completed toasts" />
     <MESSAGE value="update toast-success template" />
@@ -665,7 +661,9 @@
     <MESSAGE value="ad profile form, views and updated template" />
     <MESSAGE value="add order history to profile and update checkout view to pull profile data" />
     <MESSAGE value="update webhook handler to handle profiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="update webhook handler to handle profiles" />
+    <MESSAGE value="Add email templates, update handler to send them" />
+    <MESSAGE value="Add product form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add product form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
