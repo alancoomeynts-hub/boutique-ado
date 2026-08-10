@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add order history to profile and update checkout view to pull profile data">
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="update webhook handler to handle profiles">
+      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout/confirmation_emails/confirmation_email_subject.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout/webhook_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/webhook_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +21,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="315" />
+    <option name="cachedIndexableFilesCount" value="317" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -52,61 +55,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000661144" />
-      <entry key="S30" value="1.0006932466637364" />
-      <entry key="S60" value="1.0923430914837176" />
-      <entry key="M2" value="2.5841494096125324" />
-      <entry key="M5" value="12.283292711901142" />
-      <entry key="M10" value="25.5050673932563" />
-      <entry key="M15" value="33.86716563581008" />
-      <entry key="M30" value="49.67040603871432" />
-      <entry key="H1" value="75.12498944129283" />
-      <entry key="H2" value="119.23259787299791" />
-      <entry key="H4" value="201.28033491755278" />
-      <entry key="D1" value="968.0281583518404" />
-      <entry key="W1" value="1800.6269256704743" />
+      <entry key="MS100" value="1.0002562784872127" />
+      <entry key="MS500" value="1.191334561067518" />
+      <entry key="S2" value="1.734783063741645" />
+      <entry key="S5" value="2.306447155301857" />
+      <entry key="S10" value="2.850597771368988" />
+      <entry key="S30" value="3.831038346427119" />
+      <entry key="S60" value="5.033338357851046" />
+      <entry key="M2" value="7.466097835337387" />
+      <entry key="M5" value="16.184789531546762" />
+      <entry key="M10" value="28.11694809872694" />
+      <entry key="M15" value="37.958468918087206" />
+      <entry key="M30" value="61.562588917490245" />
+      <entry key="H1" value="96.09663082250498" />
+      <entry key="H2" value="147.97197886020948" />
+      <entry key="H4" value="235.37537268032546" />
+      <entry key="D1" value="1008.2664985703595" />
+      <entry key="W1" value="1856.8482563172101" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="4.569915635198765E-248" />
-      <entry key="S2" value="1.4620998994368103E-62" />
-      <entry key="S5" value="1.8457516913417233E-25" />
-      <entry key="S10" value="4.3833687657170626E-13" />
-      <entry key="S30" value="9.610052785703897E-5" />
-      <entry key="S60" value="0.013230553668662395" />
-      <entry key="M2" value="0.16119658515657756" />
-      <entry key="M5" value="0.8244119105737343" />
-      <entry key="M10" value="1.7453060945086163" />
-      <entry key="M15" value="2.394234615750689" />
-      <entry key="M30" value="3.6057017854925095" />
-      <entry key="H1" value="5.18026289591006" />
-      <entry key="H2" value="7.72365741941932" />
-      <entry key="H4" value="12.592342344038684" />
-      <entry key="D1" value="49.64438181315057" />
-      <entry key="W1" value="84.86714495205288" />
+      <entry key="MS500" value="1.843727762706807E-186" />
+      <entry key="S2" value="3.684887207147951E-47" />
+      <entry key="S5" value="2.6703591733276497E-19" />
+      <entry key="S10" value="5.167551829999595E-10" />
+      <entry key="S30" value="8.065756789685351E-4" />
+      <entry key="S60" value="0.033908759772731785" />
+      <entry key="M2" value="0.3781475661850637" />
+      <entry key="M5" value="2.353209940946202" />
+      <entry key="M10" value="4.629216698224405" />
+      <entry key="M15" value="5.991153453049591" />
+      <entry key="M30" value="8.401337977382443" />
+      <entry key="H1" value="11.064518909650173" />
+      <entry key="H2" value="14.413751388028427" />
+      <entry key="H4" value="19.765397004723035" />
+      <entry key="D1" value="57.509839755295175" />
+      <entry key="W1" value="93.59186161653871" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8122523963562355" />
-      <entry key="MS500" value="0.9592641193252643" />
-      <entry key="S2" value="0.989656656415207" />
-      <entry key="S5" value="0.9958497530944581" />
-      <entry key="S10" value="0.9979227190523673" />
-      <entry key="S30" value="1.000059799631134" />
-      <entry key="S60" value="1.1036279491151768" />
-      <entry key="M2" value="2.7352867609826315" />
-      <entry key="M5" value="13.085140930677545" />
-      <entry key="M10" value="27.225816301443043" />
-      <entry key="M15" value="36.23888748283294" />
-      <entry key="M30" value="53.25889418460307" />
-      <entry key="H1" value="80.29229124580989" />
-      <entry key="H2" value="126.94657429070867" />
-      <entry key="H4" value="213.86532113934643" />
-      <entry key="D1" value="1017.6682428281357" />
-      <entry key="W1" value="1885.493042357765" />
+      <entry key="MS100" value="0.8411119189149183" />
+      <entry key="MS500" value="1.1507532719593958" />
+      <entry key="S2" value="1.7174786472876487" />
+      <entry key="S5" value="2.270067253132915" />
+      <entry key="S10" value="2.80049932330151" />
+      <entry key="S30" value="3.786166105893341" />
+      <entry key="S60" value="5.025866828026708" />
+      <entry key="M2" value="7.804829181373757" />
+      <entry key="M5" value="18.49809558907466" />
+      <entry key="M10" value="32.712755566097066" />
+      <entry key="M15" value="43.92100127286011" />
+      <entry key="M30" value="69.94223966862069" />
+      <entry key="H1" value="107.14482086167625" />
+      <entry key="H2" value="162.3737193524943" />
+      <entry key="H4" value="255.13197237421537" />
+      <entry key="D1" value="1065.7717333645492" />
+      <entry key="W1" value="1950.4390352650796" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -224,15 +227,8 @@
       <workItem from="1786185858185" duration="635000" />
       <workItem from="1786203811121" duration="3905000" />
       <workItem from="1786269891138" duration="5104000" />
-      <workItem from="1786289250085" duration="4184000" />
-    </task>
-    <task id="LOCAL-00002" summary="Set up base and allauth templates">
-      <option name="closed" value="true" />
-      <created>1783457656462</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1783457656462</updated>
+      <workItem from="1786289250085" duration="7707000" />
+      <workItem from="1786347938823" duration="26000" />
     </task>
     <task id="LOCAL-00003" summary="add blocks to base template">
       <option name="closed" value="true" />
@@ -618,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786296141448</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update webhook handler to handle profiles">
+      <option name="closed" value="true" />
+      <created>1786297358836</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1786297358836</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add quantity update buttons" />
     <MESSAGE value="add update and remove buttons to bag template" />
     <MESSAGE value="finish remove view, add template tag" />
     <MESSAGE value="Added toasts" />
@@ -661,7 +664,8 @@
     <MESSAGE value="updated profile view and templates, added css for allauth templates" />
     <MESSAGE value="ad profile form, views and updated template" />
     <MESSAGE value="add order history to profile and update checkout view to pull profile data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add order history to profile and update checkout view to pull profile data" />
+    <MESSAGE value="update webhook handler to handle profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="update webhook handler to handle profiles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
