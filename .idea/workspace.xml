@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Finished add product functionality">
-      <change afterPath="$PROJECT_DIR$/products/templates/products/edit_product.html" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Add product editing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +20,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="319" />
+    <option name="cachedIndexableFilesCount" value="320" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -55,61 +54,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="6.559587315206578E-12" />
-      <entry key="MS500" value="0.006961866339727698" />
-      <entry key="S2" value="0.46062131477558166" />
-      <entry key="S5" value="1.106305979686458" />
-      <entry key="S10" value="1.486287851193867" />
-      <entry key="S30" value="1.8112419960164983" />
-      <entry key="S60" value="1.9032722307269136" />
-      <entry key="M2" value="1.975556880559079" />
-      <entry key="M5" value="3.4873264736925442" />
-      <entry key="M10" value="9.311501407833585" />
-      <entry key="M15" value="16.916262566307356" />
-      <entry key="M30" value="42.74580309699675" />
-      <entry key="H1" value="87.85080215826792" />
-      <entry key="H2" value="153.28959801769753" />
-      <entry key="H4" value="251.85383752530143" />
-      <entry key="D1" value="1038.3325113794272" />
-      <entry key="W1" value="1908.2754224542127" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000000000007" />
-      <entry key="S60" value="1.0000000271002862" />
-      <entry key="M2" value="1.0001646266043958" />
-      <entry key="M5" value="1.0318481665979833" />
-      <entry key="M10" value="1.2782068129938373" />
-      <entry key="M15" value="1.796359987536417" />
-      <entry key="M30" value="4.025286674243712" />
-      <entry key="H1" value="7.921930206061496" />
-      <entry key="H2" value="12.888160857078834" />
-      <entry key="H4" value="19.488417242919564" />
-      <entry key="D1" value="58.88235506898236" />
-      <entry key="W1" value="96.21243404785986" />
+      <entry key="S2" value="1.0000328243831784" />
+      <entry key="S5" value="1.0279739024199268" />
+      <entry key="S10" value="1.3505695288588355" />
+      <entry key="S30" value="4.138400576296137" />
+      <entry key="S60" value="8.683075086158574" />
+      <entry key="M2" value="14.70715289463963" />
+      <entry key="M5" value="22.193711027907554" />
+      <entry key="M10" value="29.53024863831612" />
+      <entry key="M15" value="37.15546714563326" />
+      <entry key="M30" value="62.488602138260376" />
+      <entry key="H1" value="107.7661162637915" />
+      <entry key="H2" value="174.21994250287077" />
+      <entry key="H4" value="273.91810024100715" />
+      <entry key="D1" value="1061.9929486481678" />
+      <entry key="W1" value="1934.4004471075618" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1637190292317124E-240" />
+      <entry key="S2" value="1.0386328012294092E-60" />
+      <entry key="S5" value="1.015277621318729E-24" />
+      <entry key="S10" value="1.0076098557074203E-12" />
+      <entry key="S30" value="1.0025302112009756E-4" />
+      <entry key="S60" value="0.010012643334997441" />
+      <entry key="M2" value="0.10007966841407388" />
+      <entry key="M5" value="0.4108899734644419" />
+      <entry key="M10" value="0.8065958840042196" />
+      <entry key="M15" value="1.3215896289511788" />
+      <entry key="M30" value="3.4526172817184677" />
+      <entry key="H1" value="7.336802426921219" />
+      <entry key="H2" value="12.403060267936853" />
+      <entry key="H4" value="19.11813492409051" />
+      <entry key="D1" value="58.69439953265921" />
+      <entry key="W1" value="96.16850032498698" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.001734669812523E-4" />
-      <entry key="MS500" value="0.24074971765827108" />
-      <entry key="S2" value="1.1540231822609646" />
-      <entry key="S5" value="1.969103257724466" />
-      <entry key="S10" value="2.4148871589773906" />
-      <entry key="S30" value="2.7867754708894625" />
-      <entry key="S60" value="2.8909525509340543" />
-      <entry key="M2" value="2.9695068843954395" />
-      <entry key="M5" value="4.515488005080532" />
-      <entry key="M10" value="10.584925792032228" />
-      <entry key="M15" value="18.706431681939392" />
-      <entry key="M30" value="46.76198477230286" />
-      <entry key="H1" value="95.76213639385195" />
-      <entry key="H2" value="166.16787492183985" />
-      <entry key="H4" value="271.3341182541423" />
-      <entry key="D1" value="1097.2102645376985" />
-      <entry key="W1" value="2004.4867602268598" />
+      <entry key="MS100" value="6.505087980407387E-6" />
+      <entry key="MS500" value="0.09175941475213145" />
+      <entry key="S2" value="0.5503879973828198" />
+      <entry key="S5" value="0.8060476579308828" />
+      <entry key="S10" value="1.185710494560788" />
+      <entry key="S30" value="3.993742725748982" />
+      <entry key="S60" value="8.580027992084533" />
+      <entry key="M2" value="14.731364803847525" />
+      <entry key="M5" value="22.566299998636588" />
+      <entry key="M10" value="30.31401238886639" />
+      <entry key="M15" value="38.45895709706741" />
+      <entry key="M30" value="65.92646274165747" />
+      <entry key="H1" value="115.0895868956456" />
+      <entry key="H2" value="186.61172020516773" />
+      <entry key="H4" value="293.027365054109" />
+      <entry key="D1" value="1120.6826125268294" />
+      <entry key="W1" value="2030.5678304434005" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -230,15 +229,8 @@
       <workItem from="1786289250085" duration="7707000" />
       <workItem from="1786347938823" duration="26000" />
       <workItem from="1786384527250" duration="2621000" />
-      <workItem from="1786394579192" duration="2210000" />
-    </task>
-    <task id="LOCAL-00007" summary="add main page header">
-      <option name="closed" value="true" />
-      <created>1783959579512</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1783959579512</updated>
+      <workItem from="1786394579192" duration="2838000" />
+      <workItem from="1786465074509" duration="460000" />
     </task>
     <task id="LOCAL-00008" summary="Finish header, add css. Update settings and urls to serve media files.">
       <option name="closed" value="true" />
@@ -624,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786387140240</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Add product editing">
+      <option name="closed" value="true" />
+      <created>1786397046524</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1786397046524</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update toast-success template" />
     <MESSAGE value="add checkout app and base models" />
     <MESSAGE value="complete model methods and migrate models" />
     <MESSAGE value="complete form, admin and signal classes to checkout" />
@@ -667,7 +666,8 @@
     <MESSAGE value="Add product form" />
     <MESSAGE value="Add product form template, view and url" />
     <MESSAGE value="Finished add product functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished add product functionality" />
+    <MESSAGE value="Add product editing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add product editing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
