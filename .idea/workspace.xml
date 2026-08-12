@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="Secured product and profile files for user authentication">
-      <change afterPath="$PROJECT_DIR$/products/templates/products/custom_widget_templates/custom_clearable_file_input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add widget override for file widget in product form">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/add_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/add_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/edit_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/edit_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,61 +53,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0003962564059985" />
-      <entry key="MS500" value="1.3605231879899113" />
-      <entry key="S2" value="3.5252405595967224" />
-      <entry key="S5" value="6.782782988735324" />
-      <entry key="S10" value="9.881152149431989" />
-      <entry key="S30" value="14.2756339137811" />
-      <entry key="S60" value="17.37028346921931" />
-      <entry key="M2" value="21.62950522815186" />
-      <entry key="M5" value="31.23953767659274" />
-      <entry key="M10" value="42.9293271898223" />
-      <entry key="M15" value="52.60279610810761" />
-      <entry key="M30" value="79.92687550165917" />
-      <entry key="H1" value="127.02984241099377" />
-      <entry key="H2" value="195.98521248785642" />
-      <entry key="H4" value="298.04709644401805" />
-      <entry key="D1" value="1089.2691074207073" />
-      <entry key="W1" value="1965.9110737234803" />
+      <entry key="MS100" value="1.0000000003504677" />
+      <entry key="MS500" value="1.0136902560686736" />
+      <entry key="S2" value="1.890992257910054" />
+      <entry key="S5" value="4.589798201078068" />
+      <entry key="S10" value="7.7918895629740375" />
+      <entry key="S30" value="12.43408930611112" />
+      <entry key="S60" value="16.025477031823897" />
+      <entry key="M2" value="23.50406547825723" />
+      <entry key="M5" value="39.90151875028774" />
+      <entry key="M10" value="56.37855565783538" />
+      <entry key="M15" value="68.2817006760979" />
+      <entry key="M30" value="98.18606254805263" />
+      <entry key="H1" value="146.99902137169698" />
+      <entry key="H2" value="217.40043013476642" />
+      <entry key="H4" value="320.5989053827664" />
+      <entry key="D1" value="1113.2079660557838" />
+      <entry key="W1" value="1991.381350491012" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.4461878745872763E-76" />
-      <entry key="S2" value="1.2506115989368283E-19" />
-      <entry key="S5" value="2.7469387821574783E-8" />
-      <entry key="S10" value="1.657389146265134E-4" />
-      <entry key="S30" value="0.05492981845113508" />
-      <entry key="S60" value="0.2343754600204821" />
-      <entry key="M2" value="0.4862042879337763" />
-      <entry key="M5" value="0.8354862019214013" />
-      <entry key="M10" value="1.2368470011820718" />
-      <entry key="M15" value="1.6965619253316315" />
-      <entry key="M30" value="3.620084611940581" />
-      <entry key="H1" value="7.424749699366712" />
-      <entry key="H2" value="12.616102933736583" />
-      <entry key="H4" value="19.50522779897024" />
-      <entry key="D1" value="59.378674290135706" />
-      <entry key="W1" value="97.09452175574944" />
+      <entry key="MS500" value="3.467449141904475E-113" />
+      <entry key="S2" value="7.673671041361222E-29" />
+      <entry key="S5" value="5.712872794073031E-12" />
+      <entry key="S10" value="2.6520019439791596E-6" />
+      <entry key="S30" value="0.0238245654015074" />
+      <entry key="S60" value="0.27419753676506586" />
+      <entry key="M2" value="1.0004059171231383" />
+      <entry key="M5" value="2.315898793695471" />
+      <entry key="M10" value="3.28591979844871" />
+      <entry key="M15" value="3.960171671901946" />
+      <entry key="M30" value="6.070365471698121" />
+      <entry key="H1" value="9.976310009235405" />
+      <entry key="H2" value="15.273784489860375" />
+      <entry key="H4" value="22.255966350825645" />
+      <entry key="D1" value="62.262163769334535" />
+      <entry key="W1" value="100.06775199108804" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9663217236913133" />
-      <entry key="MS500" value="1.3515006308872586" />
-      <entry key="S2" value="3.518894546427496" />
-      <entry key="S5" value="6.768468138720916" />
-      <entry key="S10" value="9.860671831097012" />
-      <entry key="S30" value="14.296706994597903" />
-      <entry key="S60" value="17.54798136364765" />
-      <entry key="M2" value="22.051242228074834" />
-      <entry key="M5" value="32.023540752450096" />
-      <entry key="M10" value="44.12937381143571" />
-      <entry key="M15" value="54.269855359585875" />
-      <entry key="M30" value="83.52557089100283" />
-      <entry key="H1" value="134.43771064474842" />
-      <entry key="H2" value="208.58811252649653" />
-      <entry key="H4" value="317.54241204487533" />
-      <entry key="D1" value="1148.6428492948512" />
-      <entry key="W1" value="2063.0044475733" />
+      <entry key="MS100" value="0.965936329256408" />
+      <entry key="MS500" value="1.0065971034568675" />
+      <entry key="S2" value="1.8653238378976276" />
+      <entry key="S5" value="4.496183196533984" />
+      <entry key="S10" value="7.661287112492764" />
+      <entry key="S30" value="12.361559813146357" />
+      <entry key="S60" value="16.219100557663328" />
+      <entry key="M2" value="24.422537389321068" />
+      <entry key="M5" value="42.1460072383866" />
+      <entry key="M10" value="59.61167461906514" />
+      <entry key="M15" value="72.19971739214714" />
+      <entry key="M30" value="104.22756056499048" />
+      <entry key="H1" value="156.9543837563083" />
+      <entry key="H2" value="232.65886247194177" />
+      <entry key="H4" value="342.84383912943775" />
+      <entry key="D1" value="1175.4650000563404" />
+      <entry key="W1" value="2091.447925335669" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -149,6 +148,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\products\templates\products" />
       <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout\static\checkout\css" />
       <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout" />
       <recent name="C:\Users\alanc\Documents\VS Code Projects\boutique_ado_v1\checkout\templates\checkout" />
@@ -231,15 +231,7 @@
       <workItem from="1786384527250" duration="2621000" />
       <workItem from="1786394579192" duration="2838000" />
       <workItem from="1786465074509" duration="1480000" />
-      <workItem from="1786562913917" duration="3426000" />
-    </task>
-    <task id="LOCAL-00010" summary="add products app, models and fixtures">
-      <option name="closed" value="true" />
-      <created>1784048095829</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1784048095829</updated>
+      <workItem from="1786562913917" duration="4551000" />
     </task>
     <task id="LOCAL-00011" summary="customised products admin">
       <option name="closed" value="true" />
@@ -625,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786465950683</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add widget override for file widget in product form">
+      <option name="closed" value="true" />
+      <created>1786569892215</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1786569892216</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +643,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="complete form, admin and signal classes to checkout" />
     <MESSAGE value="add checkout view and template" />
     <MESSAGE value="add stripe element to checkout form and template" />
     <MESSAGE value="add stripe payment intent to checkout view" />
@@ -668,7 +667,8 @@
     <MESSAGE value="Add product editing" />
     <MESSAGE value="Add product deletion" />
     <MESSAGE value="Secured product and profile files for user authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Secured product and profile files for user authentication" />
+    <MESSAGE value="add widget override for file widget in product form" />
+    <option name="LAST_COMMIT_MESSAGE" value="add widget override for file widget in product form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
