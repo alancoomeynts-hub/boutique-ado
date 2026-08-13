@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="add widget override for file widget in product form">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/add_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/add_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/edit_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/edit_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+    <list default="true" id="83acd961-e7a5-4cf5-b35b-cd806f2ee8cc" name="Changes" comment="product management completed">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boutique_ado_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boutique_ado_v1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +19,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="320" />
+    <option name="cachedIndexableFilesCount" value="322" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -53,61 +53,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000003504677" />
-      <entry key="MS500" value="1.0136902560686736" />
-      <entry key="S2" value="1.890992257910054" />
-      <entry key="S5" value="4.589798201078068" />
-      <entry key="S10" value="7.7918895629740375" />
-      <entry key="S30" value="12.43408930611112" />
-      <entry key="S60" value="16.025477031823897" />
-      <entry key="M2" value="23.50406547825723" />
-      <entry key="M5" value="39.90151875028774" />
-      <entry key="M10" value="56.37855565783538" />
-      <entry key="M15" value="68.2817006760979" />
-      <entry key="M30" value="98.18606254805263" />
-      <entry key="H1" value="146.99902137169698" />
-      <entry key="H2" value="217.40043013476642" />
-      <entry key="H4" value="320.5989053827664" />
-      <entry key="D1" value="1113.2079660557838" />
-      <entry key="W1" value="1991.381350491012" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000487192473468" />
+      <entry key="S5" value="1.0258861373635968" />
+      <entry key="S10" value="1.2230907816430412" />
+      <entry key="S30" value="1.984060766173501" />
+      <entry key="S60" value="2.934258715714801" />
+      <entry key="M2" value="9.142084466142409" />
+      <entry key="M5" value="42.61738818993641" />
+      <entry key="M10" value="78.26339348038817" />
+      <entry key="M15" value="97.26700978106444" />
+      <entry key="M30" value="130.78367072450632" />
+      <entry key="H1" value="183.43528625246574" />
+      <entry key="H2" value="267.7940475274909" />
+      <entry key="H4" value="389.5455214251388" />
+      <entry key="D1" value="1211.7856785308863" />
+      <entry key="W1" value="2125.849688441334" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.467449141904475E-113" />
-      <entry key="S2" value="7.673671041361222E-29" />
-      <entry key="S5" value="5.712872794073031E-12" />
-      <entry key="S10" value="2.6520019439791596E-6" />
-      <entry key="S30" value="0.0238245654015074" />
-      <entry key="S60" value="0.27419753676506586" />
-      <entry key="M2" value="1.0004059171231383" />
-      <entry key="M5" value="2.315898793695471" />
-      <entry key="M10" value="3.28591979844871" />
-      <entry key="M15" value="3.960171671901946" />
-      <entry key="M30" value="6.070365471698121" />
-      <entry key="H1" value="9.976310009235405" />
-      <entry key="H2" value="15.273784489860375" />
-      <entry key="H4" value="22.255966350825645" />
-      <entry key="D1" value="62.262163769334535" />
-      <entry key="W1" value="100.06775199108804" />
+      <entry key="MS500" value="1.715645526523E-240" />
+      <entry key="S2" value="1.2012413794120547E-60" />
+      <entry key="S5" value="1.3728837910579723E-24" />
+      <entry key="S10" value="1.5907588891175843E-12" />
+      <entry key="S30" value="1.8358450671572196E-4" />
+      <entry key="S60" value="0.019430631829042515" />
+      <entry key="M2" value="0.21280504577670253" />
+      <entry key="M5" value="0.9861459484509535" />
+      <entry key="M10" value="1.7061012943793437" />
+      <entry key="M15" value="2.107567083101661" />
+      <entry key="M30" value="3.2151337292286617" />
+      <entry key="H1" value="6.206215586259078" />
+      <entry key="H2" value="11.882011565100928" />
+      <entry key="H4" value="20.034799618489718" />
+      <entry key="D1" value="62.578348432322265" />
+      <entry key="W1" value="102.44100140405678" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.965936329256408" />
-      <entry key="MS500" value="1.0065971034568675" />
-      <entry key="S2" value="1.8653238378976276" />
-      <entry key="S5" value="4.496183196533984" />
-      <entry key="S10" value="7.661287112492764" />
-      <entry key="S30" value="12.361559813146357" />
-      <entry key="S60" value="16.219100557663328" />
-      <entry key="M2" value="24.422537389321068" />
-      <entry key="M5" value="42.1460072383866" />
-      <entry key="M10" value="59.61167461906514" />
-      <entry key="M15" value="72.19971739214714" />
-      <entry key="M30" value="104.22756056499048" />
-      <entry key="H1" value="156.9543837563083" />
-      <entry key="H2" value="232.65886247194177" />
-      <entry key="H4" value="342.84383912943775" />
-      <entry key="D1" value="1175.4650000563404" />
-      <entry key="W1" value="2091.447925335669" />
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.9876008614453725" />
+      <entry key="S2" value="0.9969342796289684" />
+      <entry key="S5" value="1.0246094568884658" />
+      <entry key="S10" value="1.222337132764208" />
+      <entry key="S30" value="1.9831593154902185" />
+      <entry key="S60" value="2.948461071330315" />
+      <entry key="M2" value="9.340899436323813" />
+      <entry key="M5" value="43.58159073845443" />
+      <entry key="M10" value="79.95056948925473" />
+      <entry key="M15" value="99.35877389369392" />
+      <entry key="M30" value="133.98606884128947" />
+      <entry key="H1" value="189.629101079626" />
+      <entry key="H2" value="279.6643141647079" />
+      <entry key="H4" value="409.57046956511005" />
+      <entry key="D1" value="1274.3588838824828" />
+      <entry key="W1" value="2228.289486583134" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -231,15 +231,8 @@
       <workItem from="1786384527250" duration="2621000" />
       <workItem from="1786394579192" duration="2838000" />
       <workItem from="1786465074509" duration="1480000" />
-      <workItem from="1786562913917" duration="4551000" />
-    </task>
-    <task id="LOCAL-00011" summary="customised products admin">
-      <option name="closed" value="true" />
-      <created>1784057010078</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1784057010078</updated>
+      <workItem from="1786562913917" duration="4576000" />
+      <workItem from="1786644780649" duration="777000" />
     </task>
     <task id="LOCAL-00012" summary="Add basic products view and template, update urls">
       <option name="closed" value="true" />
@@ -625,7 +618,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786569892216</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="product management completed">
+      <option name="closed" value="true" />
+      <created>1786574649810</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1786574649810</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add checkout view and template" />
     <MESSAGE value="add stripe element to checkout form and template" />
     <MESSAGE value="add stripe payment intent to checkout view" />
     <MESSAGE value="add form submit event listener" />
@@ -668,7 +668,8 @@
     <MESSAGE value="Add product deletion" />
     <MESSAGE value="Secured product and profile files for user authentication" />
     <MESSAGE value="add widget override for file widget in product form" />
-    <option name="LAST_COMMIT_MESSAGE" value="add widget override for file widget in product form" />
+    <MESSAGE value="product management completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="product management completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
