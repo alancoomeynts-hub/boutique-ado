@@ -16,7 +16,7 @@ if os.path.isfile('env.py'):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -115,7 +115,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -186,13 +186,6 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 #bucket config
 if 'USE_AWS' in os.environ:
-    # Cache Control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
-
     AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME="boutique-ado-ac"
@@ -216,4 +209,16 @@ STRIPE_CURRENCY='USD'
 STRIPE_PUBLIC_KEY=os.getenv('STRIPE_PUBLIC_KEY','')
 STRIPE_SECRET_KEY=os.getenv('STRIPE_SECRET_KEY','')
 STRIPE_WH_SECRET=os.getenv('STRIPE_WH_SECRET','')
-DEFAULT_FROM_EMAIL= 'boutiqueado@example.com'
+
+
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+else:
+    EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST='smtp.gmail.com'
+    EMAIL_PORT=587
+    EMAIL_USE_TLS=True
+    EMAIL_HOST_USER=os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL= os.environ.get('EMAIL_HOST_USER')
